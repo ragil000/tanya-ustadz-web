@@ -22,9 +22,9 @@ class TextPreprocessingController extends CI_Controller {
 
     public function index_get(){
 
-        $id = $this->get('id');
+        $tb_pertanyaan_isi = $this->get('tb_pertanyaan_isi');
 
-        $result = $this->QuestionModel->getQuestion($id);
+        $result = $this->TextPreprocessingModel->indexing($tb_pertanyaan_isi);
         
         if($result) {
 
@@ -57,14 +57,14 @@ class TextPreprocessingController extends CI_Controller {
 
             $this->response([
                 'status' => true,
-                'message' => 'Data berhasil ditambahkan'
+                'message' => 'Data berhasil ditambahkan',
             ], 201);
 
         }else {
 
             $this->response([
                 'status' => false,
-                'message' => 'Data gagal ditambahkan'
+                'message' => 'Data gagal ditambahkan',
             ], 400);
 
         }

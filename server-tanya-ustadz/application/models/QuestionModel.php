@@ -2,15 +2,23 @@
 
 class QuestionModel extends CI_Model {
 
-    public function getQuestion($id = null) {
+    public function getQuestion($id_tb_pertanyaan = null, $id_tb_akun = null) {
 
-        if($id === null) {
+        if($id_tb_pertanyaan === null && $id_tb_akun === null) {
 
-            return $this->db->get('tb_pertanyaan')->result_array();
+            return $this->db->get('tb_pertanyaan');
         
-        }else {
+        }else if($id_tb_pertanyaan != null && $id_tb_akun != null){
 
-            return $this->db->get_where('tb_pertanyaan', ['id_tb_pertanyaan' => $id])->result_array();
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_pertanyaan' => $id_tb_pertanyaan, 'id_tb_akun' => $id_tb_akun])->result_array();
+
+        }else if($id_tb_pertanyaan != null && $id_tb_akun === null){
+
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_pertanyaan' => $id_tb_pertanyaan])->result_array();
+
+        }else if($id_tb_pertanyaan === null && $id_tb_akun != null){
+
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_akun' => $id_tb_akun])->result_array();
 
         }
     

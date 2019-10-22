@@ -22,9 +22,10 @@ class QuestionController extends CI_Controller {
 
     public function index_get(){
 
-        $id = $this->get('id');
+        $id_tb_pertanyaan = $this->get('id_tb_pertanyaan');
+        $id_tb_akun = $this->get('id_tb_akun');
 
-        $result = $this->QuestionModel->getQuestion($id);
+        $result = $this->QuestionModel->getQuestion($id_tb_pertanyaan, $id_tb_akun);
         
         if($result) {
 

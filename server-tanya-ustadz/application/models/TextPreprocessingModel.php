@@ -442,8 +442,11 @@ class TextPreprocessingModel extends CI_Model {
 		
         $i = 0;
 		foreach($filtering as $key => $value){
-			$filtering[$i] = $value;
-			unset($filtering[$key]);
+            $filtering[$i] = $value;
+            
+            if($i != $key){
+                unset($filtering[$key]);
+            }
 			$i++;			
         }
         
@@ -483,6 +486,23 @@ class TextPreprocessingModel extends CI_Model {
         }
 
         return $frequency;
+    }
+
+    public function getIndexing($pertanyaan = null){
+        
+        $indexing = $this->textPreprocessing($pertanyaan);
+        $frequency = array();
+        foreach($indexing as $key => $value) {
+            
+            if(array_key_exists($value, $frequency)){
+                $frequency[$value] = 1 + $frequency[$value];
+            }else{
+                $frequency[$value] = 1;
+            }
+
+        }
+
+        return json_encode($frequency);
     }
 
     public function postIndexing($data = null){

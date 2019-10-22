@@ -15,12 +15,38 @@
         <link href="<?=base_url()?>belakang/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <!-- Argon CSS -->
         <link type="text/css" href="<?=base_url()?>belakang/assets/css/argon.css?v=1.0.0" rel="stylesheet">
+
+        <!-- SIM editor -->
+        <link rel="stylesheet" type="text/css" href="<?=base_url()?>belakang/node_modules/simditor/styles/simditor.css" />
+
+        <style>
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #191D4D; 
+            }
+        </style>
+
     </head>
 
     <body>
 
         <!-- Sidenav -->
-        <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+        <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-gradient-default" id="sidenav-main">
             <div class="container-fluid">
 
                 <!-- Toggler -->
@@ -119,13 +145,13 @@
                     <!-- Navigation -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=base_url()?>belakang/index.html">
-                                <i class="ni ni-tv-2 text-primary"></i> Dashboard
+                            <a class="nav-link text-light" href="<?=base_url()?>belakang/index.html">
+                                <i class="ni ni-tv-2 text-primary"></i> Beranda
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?=base_url()?>belakang/examples/icons.html">
-                                <i class="ni ni-planet text-blue"></i> Icons
+                            <a class="nav-link active text-light" href="<?=base_url()?>belakang/examples/icons.html">
+                                <i class="ni ni-email-83 text-yellow"></i> Pertanyaan
                             </a>
                         </li>
                         <li class="nav-item">
@@ -250,7 +276,7 @@
             </nav>
                 
             <!-- Header -->
-            <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+            <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
                 <div class="container-fluid">
                     <div class="header-body">
                         

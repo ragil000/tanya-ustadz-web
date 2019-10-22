@@ -52,3 +52,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['multi/masuk'] = 'multi/LoginController/index';
+$route['multi/cekMasuk'] = 'multi/LoginController/setLogin';
+$route['multi/keluar'] = 'multi/LoginController/setLogout';
+
+$route['user/beranda'] = 'users/BerandaController/index';
+
+$route['user/pertanyaan-saya'] = 'users/MyQuestionController/index';
+
+$route['user/my-question'] = 'users/MyQuestionController/getMyQuestion';
+
+$route['ustadz/pertanyaan-masuk'] = 'ustadz/QuestionsEnteredController/index';
+$route['ustadz/jawaban-saya'] = 'ustadz/QuestionsEnteredController/myAnswer';
+
+$route['ustadz/getQuestionEnteredById/(:num)'] = 'ustadz/QuestionsEnteredController/getQuestionEnteredById/$1';

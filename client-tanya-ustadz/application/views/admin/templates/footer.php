@@ -30,15 +30,29 @@
         <!-- Argon Scripts -->
         
         <!-- Core -->
-        <script src="<?=base_url()?>assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script src="<?=base_url()?>assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="<?=base_url()?>belakang/assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="<?=base_url()?>belakang/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         
         <!-- Optional JS -->
-        <script src="<?=base_url()?>assets/vendor/chart.js/dist/Chart.min.js"></script>
-        <script src="<?=base_url()?>assets/vendor/chart.js/dist/Chart.extension.js"></script>
+        <script src="<?=base_url()?>belakang/assets/vendor/chart.js/dist/Chart.min.js"></script>
+        <script src="<?=base_url()?>belakang/assets/vendor/chart.js/dist/Chart.extension.js"></script>
         
         <!-- Argon JS -->
-        <script src="<?=base_url()?>assets/js/argon.js?v=1.0.0"></script>
+        <script src="<?=base_url()?>belakang/assets/js/argon.js?v=1.0.0"></script>
+
+        <!-- Sim text editor -->
+        <script type="text/javascript" src="<?=base_url()?>belakang/node_modules/simple-hotkeys/node_modules/simple-module/lib/module.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>belakang/node_modules/simple-hotkeys/lib/hotkeys.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>belakang/node_modules/simple-uploader/dist/uploader.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>belakang/node_modules/simditor/lib/simditor.js"></script>
+
+        <!-- Custom inline -->
+        <script type="text/javascript">
+            var editor = new Simditor({
+                textarea: $('#editor')
+            });
+        </script>
+
     </body>
 
 </html>

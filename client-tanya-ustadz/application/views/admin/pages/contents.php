@@ -272,3 +272,8 @@
     </div>
   </div>
 </div>
+<div class="row mt-5">
+  <div class="col-xl-8">
+    <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+  </div>
+</div>
