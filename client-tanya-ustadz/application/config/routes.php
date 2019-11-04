@@ -57,13 +57,16 @@ $route['multi/masuk'] = 'multi/LoginController/index';
 $route['multi/cekMasuk'] = 'multi/LoginController/setLogin';
 $route['multi/keluar'] = 'multi/LoginController/setLogout';
 
-$route['user/beranda'] = 'users/BerandaController/index';
+$route['multi/beranda'] = 'multi/BerandaController/index';
 
-$route['user/pertanyaan-saya'] = 'users/MyQuestionController/index';
+$route['user/pertanyaan-saya'] = 'users/UsersController/index';
+$route['user/post-my-question'] = 'users/UsersController/postMyQuestion';
 
-$route['user/my-question'] = 'users/MyQuestionController/getMyQuestion';
+$route['user/my-question'] = 'users/UsersController/getMyQuestion';
 
-$route['ustadz/pertanyaan-masuk'] = 'ustadz/QuestionsEnteredController/index';
-$route['ustadz/jawaban-saya'] = 'ustadz/QuestionsEnteredController/myAnswer';
+$route['ustadz/pertanyaan-masuk'] = 'ustadz/UstadzController/index';
+$route['ustadz/jawaban-saya/(:num)'] = 'ustadz/UstadzController/myAnswer/$1';
+$route['ustadz/jawaban-saya'] = 'ustadz/UstadzController/myAnswer';
+$route['ustadz/post-my-answer'] = 'ustadz/UstadzController/postMyAnswer';
 
-$route['ustadz/getQuestionEnteredById/(:num)'] = 'ustadz/QuestionsEnteredController/getQuestionEnteredById/$1';
+$route['ustadz/getQuestionEnteredById/(:num)'] = 'ustadz/UstadzController/getQuestionEnteredById/$1';

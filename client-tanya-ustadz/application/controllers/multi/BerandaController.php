@@ -6,7 +6,7 @@ class BerandaController extends CI_Controller {
     public function __construct(){
         parent::__construct();
 
-		$this->load->model('users/BerandaModel');
+		$this->load->model('multi/BerandaModel');
 		$this->load->model('LibraryRMYModel');
     }
 
@@ -16,7 +16,7 @@ class BerandaController extends CI_Controller {
 		$this->LibraryRMYModel->data['berandaActive'] = 'active';		
 
 		$this->load->view('templates/header', $this->LibraryRMYModel->data);
-		$this->load->view('users/beranda');
+		$this->load->view('multi/beranda');
 		$this->load->view('templates/footer');
 	}
 }

@@ -16,10 +16,10 @@
 
                     <form action="<?=base_url()?>multi/cekMasuk" method="post">
                         <div class="form-group">
-                            <input type="text" name="tb_akun_username" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                            <input type="text" name="tb_akun_username" class="form-control text-white" id="exampleInputEmail1" placeholder="Username">
                         </div>
                         <div class="form-group">
-                            <input type="password" name="tb_akun_password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" name="tb_akun_password" class="form-control text-white" id="exampleInputPassword1" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <!-- <div class="custom-control custom-checkbox mr-sm-2">
@@ -38,17 +38,17 @@
 <?php
 
     if(@$result['status'] === true){
-        redirect('user/beranda');
+        redirect('multi/beranda');
     }
 
 ?>
 
 <script type="text/javascript">
 
-    $alertMessage = '<?=@$result['message']?>';
+    alertMessage = '<?=@$result['message']?>';
     $('#alert-login').hide();
 
-    if($alertMessage != ''){
+    if(alertMessage != ''){
         $('#alert-login').show().addClass('alert-danger');
         setTimeout(function(){$("#alert-login").fadeOut('slow');}, 2500);
     }

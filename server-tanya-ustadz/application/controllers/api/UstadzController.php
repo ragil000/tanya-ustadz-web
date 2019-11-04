@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . 'libraries/REST_Controller.php';
 require APPPATH . 'libraries/Format.php';
 
-class QuestionsEnteredController extends CI_Controller {
+class UstadzController extends CI_Controller {
 
     use REST_Controller {
         REST_Controller::__construct as private __resTraitConstruct;
@@ -16,7 +16,7 @@ class QuestionsEnteredController extends CI_Controller {
         // Construct the parent class
         parent::__construct();
         $this->__resTraitConstruct();
-        $this->load->model('QuestionsEnteredModel');
+        $this->load->model('UstadzModel');
 
     }
 
@@ -24,7 +24,33 @@ class QuestionsEnteredController extends CI_Controller {
 
         $id_tb_pertanyaan = $this->get('id_tb_pertanyaan');
 
-        $result = $this->QuestionsEnteredModel->getAllQuestionsEntered($id_tb_pertanyaan);
+        $result = $this->UstadzModel->_getAllQuestionsEntered($id_tb_pertanyaan);
+
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil'
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => $result,
+                'message' => 'Data kosong'
+            ], 200);
+
+        }
+
+    }
+
+    public function getAllUstadzsAnswered_get(){
+
+        $id_tb_akun = $this->get('id_tb_akun');
+
+        $result = $this->UstadzModel->_getAllUstadzsAnswered($id_tb_akun);
 
         if($result) {
 
@@ -50,13 +76,13 @@ class QuestionsEnteredController extends CI_Controller {
 
         $tgl = date("Y-m-d");
         $data = [
-            'id_tb_akun' => $this->post('id_tb_akun'),
-            'tb_pertanyaan_isi' => $this->post('tb_pertanyaan_isi'),
-            'tb_pertanyaan_level' => $this->post('tb_pertanyaan_level'),
-            'tb_pertanyaan_tgl' => $tgl
+            'id_tb_pertanyaan' => $this->post('id_tb_pertanyaan'),
+            'tb_jawaban_isi' => $this->post('tb_jawaban_isi'),
+            'tb_jawaban_gambar' => $this->post('tb_jawaban_gambar'),
+            'tb_jawaban_rating' => $this->post('tb_jawaban_rating'),
         ];
-
-        $result = $this->MyQuestionModel->postQuestion($data);
+        
+        $result = $this->UstadzModel->_postAnswer($data);
         if($result > 0) {
 
             $this->response([

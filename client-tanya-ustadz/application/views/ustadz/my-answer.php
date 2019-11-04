@@ -8,68 +8,58 @@
         <div class="row">
             <div class="col-12 col-md-7 col-lg-8">
                 <div class="all-posts-area">
-
-                    <!-- Section Heading -->
+                    
+                    <?php
+                        if(@$dataQuestion['data']){
+                    ?>
+                    
+                    <!-- Section Answer -->
                     <div class="section-heading style-2 mt-4">
-                        <h4>Pertanyaan Anda</h4>
+                        <h4>Jawab Pertanyaan</h4>
                         <div class="line"></div>
                     </div>
                     
                     <?php
-                        $tanggal = '';
-                        foreach($data['data'] as $result){
-                            if($result['tb_pertanyaan_level'] === '0'){
-                                $formQuestionHidden = 'hidden';
-                                $questionHidden = '';
-                                $qestionAnswersHidden = 'hidden';
-                                $qestionRangkingHidden = '';
-                                $question = $result['tb_pertanyaan_isi'];
-                                $tanggal = $RMY->_dateIND($result['tb_pertanyaan_tgl']);
-                                break;
-                            }
-                        }
-
-                        if(@$_SESSION['tb_akun_level']){
-                            if($_SESSION['tb_akun_level'] === '0' || $_SESSION['tb_akun_level'] === '1' || $_SESSION['tb_akun_level'] === '2'){
-                                $formQuestionHidden = 'hidden';
-                                $questionHidden = 'hidden';
-                                $qestionAnswersHidden = 'hidden';
-                                $qestionRangkingHidden = 'hidden';
-                                $question = '';
-                                $tanggal = '';
-                            }
-                        }
-
+                        $id_tb_pertanyaan = '';
+                        foreach($dataQuestion['data'] as $dataQuestionV){
+                            $id_tb_pertanyaan = $dataQuestionV['id_tb_pertanyaan'];
                     ?>
-                    <!-- Single Post Question -->
-                    <div class="single-post-area mb-30" <?=$formQuestionHidden?>>
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-12">
-                                <form action="">
-                                    <!-- <p id="count-question-caracter">250</p> -->
-                                    <textarea name="message" class="form-control text-white" id="message" cols="30" rows="10" maxlength="1500"></textarea>
-                                    <button type="submit" class="btn vizew-btn w-100">Kirim Pertanyaan</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pertanyaan baru dikirim -->
-                    <div class="single-post-area mb-30" <?=$questionHidden?>>
+                    <!-- Pertanyaan yang dijawab -->
+                    <div class="single-post-area mb-30">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-12">
                                 <blockquote class="vizew-blockquote mb-15">
-                                    <h5 class="blockquote-text">"<?=$question?>”</h5>
-                                    <h6><?=$tanggal?></h6>
+                                    <h5 class="blockquote-text">"<?=$dataQuestionV['tb_pertanyaan_isi']?>"</h5>
+                                    <h6 class="text-red"><?=$RMY->_dateIND($dataQuestionV['tb_pertanyaan_tgl'])?></h6>
                                 </blockquote>
                             </div>
                         </div>
                     </div>
+                    <?php
+                        }
+                    ?>
+
+                    <!-- Form Answer Section -->
+                    <div class="single-post-area mb-30" id="form-answer-section">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-12">
+                                <form action="<?=base_url()?>ustadz/post-my-answer" method="POST">
+                                    <input type="text" name="id_tb_pertanyaan" value="<?=$id_tb_pertanyaan?>" hidden>
+                                    <textarea name="tb_jawaban_isi" class="form-control text-white" id="form-answer" cols="30" rows="10"></textarea>
+                                    <button type="submit" class="btn vizew-btn w-100">Kirim Jawaban</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Form Answer Section -->
+                    <?php
+                        }
+                    ?>
 
                     <!-- Daftar rangking saran jawaban -->
-                    <div <?=$qestionRangkingHidden?>>
+                    <div>
                         <div class="section-heading style-1 mt-4">
-                            <h4>Saran Jawaban</h4>
+                            <h4>Daftar Jawaban Saya</h4>
                             <div class="line"></div>
                         </div>
 
@@ -118,7 +108,7 @@
                     <!-- end Daftar rangking saran jawaban -->
                     
                     <!-- Daftar pertanyaan sudah dijawab -->
-                    <div <?=$qestionAnswersHidden?>>
+                    <div>
                         <div class="section-heading style-1 mt-4">
                             <h4>Pertanyaan Sudah Dijawab</h4>
                             <div class="line"></div>
@@ -399,3 +389,10 @@
     </div>
 </section>
 <!-- ##### Vizew Psot Area End ##### -->
+
+<!-- Custom inline -->
+<script type="text/javascript">
+    var editor = new Simditor({
+        textarea: $('#form-answer')
+    });
+</script>

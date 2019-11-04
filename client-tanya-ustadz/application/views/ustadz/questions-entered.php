@@ -29,7 +29,7 @@
                                 <a href="#" class="btn-modal-question-detail" id_tb_pertanyaan="<?=$result['id_tb_pertanyaan']?>">
                                     <blockquote class="vizew-blockquote pb-1 pt-2 mb-1 mbg-danger">
                                     <p><?=$tanggal?></p>
-                                        <h5 class="blockquote-text">"<?=$RMY-> _splitText($result['tb_pertanyaan_isi'], $limit = 100)?>”</h5>                                    
+                                        <h5 class="blockquote-text">"<?=$RMY-> _splitText($result['tb_pertanyaan_isi'], 100)?>”</h5>                                    
                                     </blockquote>
                                 </a>
                                 <div class="row">
@@ -56,10 +56,10 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p id="question-detail">Modal body text goes here.</p>
+                                    <p class="text-dark" id="question-detail">Modal body text goes here.</p>
                                 </div>
                                 <div class="modal-footer">
-                                <a href="#" id="btn-question-detail" class="btn btn-success btn-sm pl-4 pr-4">Jawab</a>
+                                    <a href="" id="btn-question-detail" class="btn btn-success btn-sm pl-4 pr-4">Jawab</a>
                                 </div>
                             </div>
                         </div>

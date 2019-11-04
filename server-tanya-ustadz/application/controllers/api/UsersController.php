@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . 'libraries/REST_Controller.php';
 require APPPATH . 'libraries/Format.php';
 
-class MyQuestionController extends CI_Controller {
+class UsersController extends CI_Controller {
 
     use REST_Controller {
         REST_Controller::__construct as private __resTraitConstruct;
@@ -16,7 +16,7 @@ class MyQuestionController extends CI_Controller {
         // Construct the parent class
         parent::__construct();
         $this->__resTraitConstruct();
-        $this->load->model('MyQuestionModel');
+        $this->load->model('UsersModel');
 
     }
 
@@ -25,7 +25,7 @@ class MyQuestionController extends CI_Controller {
         $id_tb_pertanyaan = $this->get('id_tb_pertanyaan');
         $id_tb_akun = $this->get('id_tb_akun');
 
-        $result = $this->MyQuestionModel->getMyQuestion($id_tb_pertanyaan, $id_tb_akun);
+        $result = $this->UsersModel->_getMyQuestion($id_tb_pertanyaan, $id_tb_akun);
 
         if($result) {
 
@@ -57,7 +57,7 @@ class MyQuestionController extends CI_Controller {
             'tb_pertanyaan_tgl' => $tgl
         ];
 
-        $result = $this->MyQuestionModel->postQuestion($data);
+        $result = $this->UsersModel->_postQuestion($data);
         if($result > 0) {
 
             $this->response([
@@ -80,7 +80,7 @@ class MyQuestionController extends CI_Controller {
 
         $id = $this->delete('id');
 
-        $result = $this->MyQuestionModel->deleteQuestion($id);
+        $result = $this->UsersModel->deleteQuestion($id);
 
         if($result > 0) {
 
@@ -111,7 +111,7 @@ class MyQuestionController extends CI_Controller {
             'tb_artikel_level' => $this->put('tb_artikel_level'),
         ];
 
-        $result = $this->MyQuestionModel->putQuestion($data, $id);
+        $result = $this->UsersModel->putQuestion($data, $id);
         if($result > 0) {
 
             $this->response([

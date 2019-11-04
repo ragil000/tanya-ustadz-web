@@ -1,22 +1,30 @@
 <?php
 
-class QuestionsEnteredModel extends CI_Model {
+class UsersModel extends CI_Model {
 
-    public function getAllQuestionsEntered($id_tb_pertanyaan = null) {
+    public function _getMyQuestion($id_tb_pertanyaan = null, $id_tb_akun = null) {
 
-        if($id_tb_pertanyaan === null) {
+        if($id_tb_pertanyaan === null && $id_tb_akun === null) {
 
-            return $this->db->get_where('tb_pertanyaan', ['tb_pertanyaan_level' => '0'])->result_array();
+            return $this->db->get('tb_pertanyaan')->result_array();
         
-        }else if($id_tb_pertanyaan != null){
+        }else if($id_tb_pertanyaan != null && $id_tb_akun != null){
 
-            return $this->db->get_where('tb_pertanyaan', ['tb_pertanyaan_level' => '0', 'id_tb_pertanyaan' => $id_tb_pertanyaan])->result_array();
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_pertanyaan' => $id_tb_pertanyaan, 'id_tb_akun' => $id_tb_akun])->result_array();
+
+        }else if($id_tb_pertanyaan != null && $id_tb_akun === null){
+
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_pertanyaan' => $id_tb_pertanyaan])->result_array();
+
+        }else if($id_tb_pertanyaan === null && $id_tb_akun != null){
+
+            return $this->db->get_where('tb_pertanyaan', ['id_tb_akun' => $id_tb_akun])->result_array();
 
         }
     
     }
 
-    public function postQuestion($data = null) {
+    public function _postQuestion($data = null) {
 
        if($data === null) {
             return $this->db->affected_rows();

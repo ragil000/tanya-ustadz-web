@@ -1,7 +1,7 @@
 <?php
 use GuzzleHttp\Client;
 
-class QuestionsEnteredModel extends CI_Model{
+class UstadzModel extends CI_Model{
 
     private $_client;
 
@@ -31,6 +31,39 @@ class QuestionsEnteredModel extends CI_Model{
             'query' => [
                 'id_tb_pertanyaan' => $id_tb_pertanyaan
             ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getAllUstadzsAnswered($id_tb_akun){
+
+        $response = $this->_client->request('GET', 'QuestionsEnteredController/getAllUstadzsAnswered', [
+            'query' => [
+                'id_tb_akun' => $id_tb_akun
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _postMyAnswer($post){
+        
+        $data = [
+            'id_tb_pertanyaan' => $post['id_tb_pertanyaan'],
+            'tb_jawaban_isi' => $post['tb_jawaban_isi'],
+            'tb_jawaban_gambar' => 'default.jpg',
+            'tb_jawaban_rating' => '0'
+        ];
+
+        $response = $this->_client->request('POST', 'QuestionsEnteredController', [
+            'form_params' => $data
         ]);
 
         $result = json_decode($response->getBody()->getContents(), true);

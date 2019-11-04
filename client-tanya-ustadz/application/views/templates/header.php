@@ -22,6 +22,12 @@
         <!-- jQuery-2.2.4 js -->
         <script src="<?=base_url()?>depan/js/jquery/jquery-2.2.4.min.js"></script>
 
+        <!-- Sim text editor -->
+        <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simple-hotkeys/node_modules/simple-module/lib/module.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simple-hotkeys/lib/hotkeys.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simple-uploader/dist/uploader.js"></script>
+        <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simditor/lib/simditor.js"></script>
+
     </head>
 
     <body>
@@ -105,7 +111,7 @@
                                 <!-- Nav Start -->
                                 <div class="classynav">
                                     <ul>
-                                        <li class="<?=$berandaActive?>"><a href="<?=base_url()?>user/beranda">Beranda</a></li>
+                                        <li class="<?=$berandaActive?>"><a href="<?=base_url()?>multi/beranda">Beranda</a></li>
                                         <?php
                                             if(@$_SESSION['tb_akun_level']){
                                                 if($_SESSION['tb_akun_level'] == '0'){
@@ -114,7 +120,8 @@
                                         <?php
                                                 }else if($_SESSION['tb_akun_level'] == '1'){
                                         ?>
-                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>user/pertanyaan-saya">Pertanyaan Saya</a></li>
+                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>editor/jawaban-siap-publis">Jawaban Siap Publis</a></li>
+                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>editor/jawaban-terpublis">Jawaban Terpublis</a></li>
                                         <?php
                                                 }else if($_SESSION['tb_akun_level'] == '2'){
                                         ?>

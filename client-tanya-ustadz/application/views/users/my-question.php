@@ -46,13 +46,17 @@
                         }
 
                     ?>
+
+                    <div class="alert" id="alert-login" role="alert">
+                        <strong><?=@$result['message']?></strong>
+                    </div>
                     <!-- Single Post Question -->
                     <div class="single-post-area mb-30" <?=$formQuestionHidden?>>
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-12">
-                                <form action="">
+                                <form action="<?=base_url()?>user/post-my-question" method="POST">
                                     <!-- <p id="count-question-caracter">250</p> -->
-                                    <textarea name="message" class="form-control text-white" id="message" cols="30" rows="10" maxlength="1500"></textarea>
+                                    <textarea name="tb_pertanyaan_isi" class="form-control text-white" id="message" cols="30" rows="10" maxlength="1500"></textarea>
                                     <button type="submit" class="btn vizew-btn w-100">Kirim Pertanyaan</button>
                                 </form>
                             </div>
@@ -65,7 +69,7 @@
                             <div class="col-12 col-lg-12">
                                 <blockquote class="vizew-blockquote mb-15">
                                     <h5 class="blockquote-text">"<?=$question?>”</h5>
-                                    <h6><?=$tanggal?></h6>
+                                    <h6 class="text-red"><?=$tanggal?></h6>
                                 </blockquote>
                             </div>
                         </div>
@@ -404,3 +408,15 @@
     </div>
 </section>
 <!-- ##### Vizew Psot Area End ##### -->
+
+<script type="text/javascript">
+
+    alertMessage = '<?=@$result['message']?>';
+    $('#alert-login').hide();
+
+    if(alertMessage != ''){
+        $('#alert-login').show().addClass('alert-danger');
+        setTimeout(function(){$("#alert-login").fadeOut('slow');}, 2500);
+    }
+   
+</script>
