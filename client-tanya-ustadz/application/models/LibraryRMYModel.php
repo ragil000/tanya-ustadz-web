@@ -10,6 +10,9 @@ class LibraryRMYModel extends CI_Model {
         $this->data['pertanyaanSayaActive'] = '';
         $this->data['pertanyaanMasukActive'] = '';
         $this->data['jawabanSayaActive'] = '';
+        $this->data['jawabanSiapPublisActive'] = '';
+        $this->data['jawabanTerpublisActive'] = '';
+
     }
 
     public function _dateIND($date){
@@ -41,7 +44,7 @@ class LibraryRMYModel extends CI_Model {
         $split = explode('-', $date);
         $indexHari = date('l', strtotime($date));
 
-        return $hari[$indexHari].', '.$split[2].' '.$bulan[$split[1]].' '.$split[0];
+        return $hari[$indexHari].', '.$split[2].' '.$bulan[$split[1]-1].' '.$split[0];
     }
 
     public function _splitText($string, $limit = 100) {
@@ -61,33 +64,24 @@ class LibraryRMYModel extends CI_Model {
 
     }
 
-    public function _rangking(){
-        $numbers = array( 101.5, 201.1, 301.3, 391.3, 403.1, 401.3, 301, 501, 601, 501, 701);
-        rsort($numbers);
-
-        $arrlength = count($numbers);
-        $rank = 1;
-        $prev_rank = $rank;
-
-        for($x = 0; $x < $arrlength; $x++) {
-
-            if ($x==0) {
-                echo $numbers[$x]."- Rank".($rank);
+    public function _rangking($array){
+        
+        // insert sort
+        $n = count($array);
+        for ($i = 0; $i < ($n - 1); $i++) {
+            $key = $i + 1;
+            $tmp = $array[$key]['similarity'];
+            $replace = $array[$key];
+            for ($j = ($i + 1); $j > 0; $j--) {
+                if ($tmp < $array[$j - 1]['similarity']) {
+                    $array[$j] = $array[$j - 1];
+                    $key = $j - 1;
+                }
             }
-
-        elseif ($numbers[$x] != $numbers[$x-1]) {
-                $rank++;
-                $prev_rank = $rank;
-                echo $numbers[$x]."- Rank".($rank);
+            $array[$key] = $replace;
         }
 
-        else{
-                $rank++;
-                echo $numbers[$x]."- Rank".($prev_rank);
-            }
-
-        echo "<br>";
-        }
+        return $array;
     }
 
     public function coba(){

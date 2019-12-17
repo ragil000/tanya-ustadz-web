@@ -35,23 +35,6 @@ class VSMController extends CI_Controller {
             'message' => 'Data tertampil'
         ], 200);
 
-        // if($result) {
-
-        //     $this->response([
-        //         'status' => true,
-        //         'data' => $result,
-        //         'message' => 'Data tertampil'
-        //     ], 200);
-
-        // }else {
-
-        //     $this->response([
-        //         'status' => false,
-        //         'message' => 'Data kosong'
-        //     ], 404);
-
-        // }
-
     }
 
 }

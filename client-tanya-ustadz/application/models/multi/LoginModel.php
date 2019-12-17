@@ -34,4 +34,34 @@ class LoginModel extends CI_Model{
 
     }
 
+    public function _getAllAccount(){
+        
+        $response = $this->_client->request('GET', 'LoginController/getAllAccount', [
+
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _postRegister(){
+        
+        $data = [
+            'tb_akun_username' => $this->input->post('tb_akun_username', true),
+            'tb_akun_password' => md5($this->input->post('tb_akun_password', true)),
+            'tb_akun_level' => $this->input->post('tb_akun_level', true),
+        ];
+
+        $response = $this->_client->request('POST', 'LoginController', [
+            'form_params' => $data
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
 }

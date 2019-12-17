@@ -53,6 +53,8 @@ $route['default_controller'] = 'Welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['multi/daftar'] = 'multi/LoginController/register';
+$route['multi/postRegister'] = 'multi/LoginController/postRegister';
 $route['multi/masuk'] = 'multi/LoginController/index';
 $route['multi/cekMasuk'] = 'multi/LoginController/setLogin';
 $route['multi/keluar'] = 'multi/LoginController/setLogout';
@@ -61,12 +63,27 @@ $route['multi/beranda'] = 'multi/BerandaController/index';
 
 $route['user/pertanyaan-saya'] = 'users/UsersController/index';
 $route['user/post-my-question'] = 'users/UsersController/postMyQuestion';
-
 $route['user/my-question'] = 'users/UsersController/getMyQuestion';
+$route['user/delete-my-question/(:num)'] = 'users/UsersController/deleteMyQuestion/$1';
+$route['user/belum-terjawab/(:num)'] = 'users/UsersController/similarMyQuestion/$1';
+$route['user/sudah-terjawab/(:num)/(:num)'] = 'users/UsersController/similarMyQuestion/$1/$2';
 
 $route['ustadz/pertanyaan-masuk'] = 'ustadz/UstadzController/index';
 $route['ustadz/jawaban-saya/(:num)'] = 'ustadz/UstadzController/myAnswer/$1';
+$route['ustadz/jawaban-saya/(:num)/(:num)'] = 'ustadz/UstadzController/myAnswer/$1/$2';
 $route['ustadz/jawaban-saya'] = 'ustadz/UstadzController/myAnswer';
 $route['ustadz/post-my-answer'] = 'ustadz/UstadzController/postMyAnswer';
-
+$route['ustadz/put-my-answer'] = 'ustadz/UstadzController/putMyAnswer';
+$route['ustadz/delete-my-answer/(:num)/(:num)'] = 'ustadz/UstadzController/deleteMyAnswer/$1/$2';
 $route['ustadz/getQuestionEnteredById/(:num)'] = 'ustadz/UstadzController/getQuestionEnteredById/$1';
+
+$route['editor/jawaban-siap-publis/(:num)'] = 'editors/EditorsController/index/$1';
+$route['editor/jawaban-siap-publis'] = 'editors/EditorsController/index';
+$route['editor/post-published-answer'] = 'editors/EditorsController/postPublishedAnswer';
+$route['editor/put-published-answer'] = 'editors/EditorsController/putPublishedAnswer';
+$route['editor/delete-published-answer/(:num)/(:num)/(:any)'] = 'editors/EditorsController/deletePublishedAnswer/$1/$2/$3';
+$route['editor/jawaban-terpublis/(:num)'] = 'editors/EditorsController/getPublishedAnswers/$1';
+$route['editor/jawaban-terpublis'] = 'editors/EditorsController/getPublishedAnswers';
+
+$route['multi/single-post/(:num)'] = 'multi/BerandaController/getSinglePost/$1';
+$route['multi/single-post/(:num)/(:num)'] = 'multi/BerandaController/getSinglePost/$1/$2';

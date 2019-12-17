@@ -22,10 +22,61 @@ class UsersController extends CI_Controller {
 
     public function index_get(){
 
-        $id_tb_pertanyaan = $this->get('id_tb_pertanyaan');
         $id_tb_akun = $this->get('id_tb_akun');
 
-        $result = $this->UsersModel->_getMyQuestion($id_tb_pertanyaan, $id_tb_akun);
+        $result = $this->UsersModel->_getMyQuestion($id_tb_akun);
+
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil'
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => null,
+                'message' => 'Data kosong'
+            ], 200);
+
+        }
+
+    }
+
+    public function getSimilarityData_get(){
+
+        $id_tb_akun = $this->get('id_tb_akun');
+
+        $result = $this->UsersModel->_getSimilarityData($id_tb_akun);
+
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil'
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => null,
+                'message' => 'Data kosong'
+            ], 200);
+
+        }
+
+    }
+
+    public function getMyQuestionAnswered_get(){
+
+        $id_tb_akun = $this->get('id_tb_akun');
+
+        $result = $this->UsersModel->_getMyQuestionAnswered($id_tb_akun);
 
         if($result) {
 
@@ -42,6 +93,32 @@ class UsersController extends CI_Controller {
                 'data' => $result,
                 'message' => 'Data kosong'
             ], 200);
+
+        }
+
+    }
+
+    public function similarMyQuestion_post() {
+
+        $data = [
+            'id_tb_pertanyaan' => $this->post('id_tb_pertanyaan'),
+            'id_tb_penjawab' => $this->post('id_tb_penjawab')
+        ];
+
+        $result = $this->UsersModel->_similarMyQuestion($data);
+        if($result > 0) {
+
+            $this->response([
+                'status' => true,
+                'message' => 'Data berhasil ditambahkan'
+            ], 201);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'message' => 'Data gagal ditambahkan'
+            ], 400);
 
         }
 
@@ -78,15 +155,15 @@ class UsersController extends CI_Controller {
 
     public function index_delete() {
 
-        $id = $this->delete('id');
+        $id_tb_pertanyaan = $this->delete('id_tb_pertanyaan');
 
-        $result = $this->UsersModel->deleteQuestion($id);
+        $result = $this->UsersModel->_deleteMyQuestion($id_tb_pertanyaan);
 
         if($result > 0) {
 
             $this->response([
                 'status' => true,
-                'id' => $id,
+                'id_tb_pertanyaan' => $id_tb_pertanyaan,
                 'message' => 'Data berhasil dihapus'
             ], 200);
 
@@ -100,34 +177,5 @@ class UsersController extends CI_Controller {
         }
 
     }
-
-    public function index_put() {
-
-        $id = $this->put('id');
-        $data = [
-            'id_tb_pertanyaan' => $this->put('id_tb_pertanyaan'),
-            'tb_artikel_isi' => $this->put('tb_artikel_isi'),
-            'tb_artikel_author' => $this->put('tb_artikel_author'),
-            'tb_artikel_level' => $this->put('tb_artikel_level'),
-        ];
-
-        $result = $this->UsersModel->putQuestion($data, $id);
-        if($result > 0) {
-
-            $this->response([
-                'status' => true,
-                'message' => 'Data berhasil diubah'
-            ], 200);
-
-        }else {
-
-            $this->response([
-                'status' => false,
-                'message' => 'Data gagal diubah'
-            ], 400);
-
-        }
-
-    } 
 
 }

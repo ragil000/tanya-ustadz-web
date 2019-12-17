@@ -10,9 +10,10 @@ class VSMModel extends CI_Model {
         $datas = $this->db->get('tb_textpreprocessing')->result_array();
         foreach($datas as $data){
             $dataCeck = json_decode($data['tb_textpreprocessing_array'], true);
+
             $dataPush = array(
                 'id_tb_pertanyaan' => $data['id_tb_pertanyaan'],
-                'tb_textpreprocessing_array' => $data['tb_textpreprocessing_array']
+                'tb_textpreprocessing_array' => $data['tb_textpreprocessing_array'],
             );
 
             foreach($dataCeck as $indexD => $valueD){
@@ -94,9 +95,18 @@ class VSMModel extends CI_Model {
             }
             $similarity = $this->similarity($totalQD, (float)$RQD);
 
+            $this->load->model("QuestionModel");
+            $dataQuestion = $this->QuestionModel->_getQuestionById($d['id_tb_pertanyaan']);
+
             $dataPush = array(
                 'id_tb_pertanyaan' => $d['id_tb_pertanyaan'],
                 'tb_textpreprocessing_array' => $dataArray,
+                'tb_jawaban_gambar' => $dataQuestion[0]['tb_jawaban_gambar'],
+                'tb_jawaban_judul' => $dataQuestion[0]['tb_jawaban_judul'],
+                'tb_jawaban_isi' => $dataQuestion[0]['tb_jawaban_isi'],
+                'tb_penjawab_tgl' => $dataQuestion[0]['tb_penjawab_tgl'],
+                'id_tb_jawaban' => $dataQuestion[0]['id_tb_jawaban'],
+                'tb_akun_detail_nama' => $dataQuestion[0]['tb_akun_detail_nama'],
                 'QD' => $totalQD,
                 'RQD' => $RQD,
                 'similarity' => $similarity

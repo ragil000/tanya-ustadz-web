@@ -2,297 +2,39 @@
 <section class="hero--area section-padding-80">
     <div class="container">
         <div class="row no-gutters">
+
             <div class="col-12 col-md-7 col-lg-8">
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="post-1" role="tabpanel" aria-labelledby="post-1-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <!-- <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a> -->
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
+                <div class="tab-content" id="data-top">
+                
+                    <!-- loader -->
+                    <div class="loading-area2">
+                        <div class="loading">
+                            <div class="rectangle_1"></div>
+                            <div class="rectangle_2"></div>
+                            <div class="rectangle_3"></div>
+                            <div class="rectangle_4"></div>
+                            <div class="rectangle_5"></div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="post-2" role="tabpanel" aria-labelledby="post-2-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/8.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="post-3" role="tabpanel" aria-labelledby="post-3-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="post-4" role="tabpanel" aria-labelledby="post-4-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="post-5" role="tabpanel" aria-labelledby="post-5-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="post-6" role="tabpanel" aria-labelledby="post-6-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="post-7" role="tabpanel" aria-labelledby="post-7-tab">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
+                    <!-- end loader -->
+                    
                 </div>
             </div>
 
             <div class="col-12 col-md-5 col-lg-4">
-                <ul class="nav vizew-nav-tab" role="tablist">
+                <ul class="nav vizew-nav-tab" role="tablist" id="data-bottom">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" id="post-1-tab" data-toggle="pill" href="#post-1" role="tab" aria-controls="post-1" aria-selected="true">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/3.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">Boys 'doing well' after Thai cave rescue</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 25</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 11</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 19</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-2-tab" data-toggle="pill" href="#post-2" role="tab" aria-controls="post-2" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/4.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-3-tab" data-toggle="pill" href="#post-3" role="tab" aria-controls="post-3" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/5.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">Pogba dedicates France win to Thai cave boys</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-4-tab" data-toggle="pill" href="#post-4" role="tab" aria-controls="post-4" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/6.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-5-tab" data-toggle="pill" href="#post-5" role="tab" aria-controls="post-5" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/4.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-6-tab" data-toggle="pill" href="#post-6" role="tab" aria-controls="post-6" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/6.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">How the world reacted to PM's Brexit crisis</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 24</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 98</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 63</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" id="post-7-tab" data-toggle="pill" href="#post-7" role="tab" aria-controls="post-7" aria-selected="false">
-                            <!-- Single Blog Post -->
-                            <div class="single-blog-post style-2 d-flex align-items-center">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/4.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <h6 class="post-title">Meet the 12 boys rescued from cave</h6>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <span><i class="fa fa-comments-o" aria-hidden="true"></i> 14</span>
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i> 34</span>
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+                    <!-- loader -->
+                    <div class="loading-area2">
+                        <div class="loading">
+                            <div class="rectangle_1"></div>
+                            <div class="rectangle_2"></div>
+                            <div class="rectangle_3"></div>
+                            <div class="rectangle_4"></div>
+                            <div class="rectangle_5"></div>
+                        </div>
+                    </div>
+                    <!-- end loader -->
 
                 </ul>
             </div>
@@ -301,576 +43,53 @@
 </section>
 <!-- ##### Hero Area End ##### -->
 
-<!-- ##### Trending Posts Area Start ##### -->
-<section class="trending-posts-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <!-- Section Heading -->
-                <div class="section-heading">
-                    <h4>Paling Banyak Dibaca</h4>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/11.jpg" alt="">
-
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                        <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’ Sequel</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/12.jpg" alt="">
-
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminste Bridge</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Blog Post -->
-            <div class="col-12 col-md-4">
-                <div class="single-post-area mb-80">
-                    <!-- Post Thumbnail -->
-                    <div class="post-thumbnail">
-                        <img src="img/bg-img/13.jpg" alt="">
-
-                        <!-- Video Duration -->
-                        <span class="video-duration">05.03</span>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="post-content">
-                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                        <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her funeral</a>
-                        <div class="post-meta d-flex">
-                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- ##### Trending Posts Area End ##### -->
-
 <!-- ##### Vizew Post Area Start ##### -->
 <section class="vizew-post-area mb-50">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-7 col-lg-8">
-                <div class="all-posts-area">
-                    <!-- Section Heading -->
-                    <div class="section-heading style-2">
-                        <h4>Artikel Populer</h4>
-                        <div class="line"></div>
-                    </div>
-
-                    <!-- Featured Post Slides -->
-                    <div class="featured-post-slides owl-carousel mb-30">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/14.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/12.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminste Bridge</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/13.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                    <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after her funeral</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2">
-                                <h4>Sport Videos</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Sports Video Slides -->
-                            <div class="sport-video-slides owl-carousel mb-50">
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/15.jpg" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminster Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/13.jpg" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                        <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on Westminster Bridge</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6">
-                            <!-- Section Heading -->
-                            <div class="section-heading style-2">
-                                <h4>Business Videos</h4>
-                                <div class="line"></div>
-                            </div>
-
-                            <!-- Business Video Slides -->
-                            <div class="business-video-slides owl-carousel mb-50">
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/17.jpg" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent' global research</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Single Blog Post -->
-                                <div class="single-post-area">
-                                    <!-- Post Thumbnail -->
-                                    <div class="post-thumbnail">
-                                        <img src="img/bg-img/13.jpg" alt="">
-
-                                        <!-- Video Duration -->
-                                        <span class="video-duration">05.03</span>
-                                    </div>
-
-                                    <!-- Post Content -->
-                                    <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                        <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent' global research</a>
-                                        <div class="post-meta d-flex">
-                                            <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-30">
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-lg-6">
-                            <div class="single-blog-post style-3 d-flex mb-50">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/16.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Epileptic boy's cannabis let through border</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-lg-6">
-                            <div class="single-blog-post style-3 d-flex mb-50">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/18.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Paramedics 'drilled into boat death woman'</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-lg-6">
-                            <div class="single-blog-post style-3 d-flex mb-50">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/19.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Tory vice-chairs quit over PM's Brexit plan</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-lg-6">
-                            <div class="single-blog-post style-3 d-flex mb-50">
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/20.jpg" alt="">
-                                </div>
-                                <div class="post-content">
-                                    <a href="single-post.html" class="post-title">Do This One Simple Action for an Absolutely</a>
-                                    <div class="post-meta d-flex justify-content-between">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 16</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 26</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 17</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="all-posts-area">  
 
                     <!-- Section Heading -->
                     <div class="section-heading style-2">
-                        <h4>Pertanyaan Lainnya</h4>
+                        <h4>Tanya Jawab Lainnya</h4>
                         <div class="line"></div>
                     </div>
 
-                    <!-- Featured Post Slides -->
-                    <div class="featured-post-slides owl-carousel mb-30">
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/14.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
-                        </div>
-
-                        <!-- Single Feature Post -->
-                        <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg);">
-                            <!-- Play Button -->
-                            <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <a href="#" class="post-cata">Sports</a>
-                                <a href="single-post.html" class="post-title">Reunification of migrant toddlers, parents should be completed Thursday</a>
-                                <div class="post-meta d-flex">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a>
-                                </div>
-                            </div>
-
-                            <!-- Video Duration -->
-                            <span class="video-duration">05.03</span>
+                    <!-- loader -->
+                    <div id="loading-area">
+                        <div class="loading">
+                            <div class="rectangle_1"></div>
+                            <div class="rectangle_2"></div>
+                            <div class="rectangle_3"></div>
+                            <div class="rectangle_4"></div>
+                            <div class="rectangle_5"></div>
                         </div>
                     </div>
-
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/21.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-success">Sports</a>
-                                    <a href="single-post.html" class="post-title mb-2">May fights on after Johnson savages Brexit approach</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- end loader -->
+                    
+                    <!-- data pagination -->
+                    <div id="data-answer">
+                    
                     </div>
+                    <!-- end data pagination -->
 
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/22.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title mb-2">Thailand cave rescue: Boys 'doing well' after spending night</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/23.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                    <a href="single-post.html" class="post-title mb-2">Theresa May battles Brexiteer backlash amid disquiet</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Post Area -->
-                    <div class="single-post-area mb-30">
-                        <div class="row align-items-center">
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="img/bg-img/24.jpg" alt="">
-
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <!-- Post Content -->
-                                <div class="post-content mt-0">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title mb-2">Theresa May warned Brexit strategy 'risks putting Jeremy Corbyn</a>
-                                    <div class="post-meta d-flex align-items-center mb-2">
-                                        <a href="#" class="post-author">By Jane</a>
-                                        <i class="fa fa-circle" aria-hidden="true"></i>
-                                        <a href="#" class="post-date">Sep 08, 2018</a>
-                                    </div>
-                                    <p class="mb-2">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.</p>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav class="mt-50">
+                        <ul class="pagination justify-content-center" id="pagination">
+                        
+                        </ul>
+                    </nav>
 
                 </div>
             </div>
 
             <div class="col-12 col-md-5 col-lg-4">
+                
                 <div class="sidebar-area">
 
                     <!-- ***** Single Widget ***** -->
-                    <div class="single-widget followers-widget mb-50">
-                        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span class="counter">198</span><span>Fan</span></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span class="counter">220</span><span>Followers</span></a>
-                        <a href="#" class="google"><i class="fa fa-google" aria-hidden="true"></i><span class="counter">140</span><span>Subscribe</span></a>
+                    <div class="single-widget followers-widget mb-50 clock-container">
+                        <p class="text-center clock-item" id="set-clock">00:00:00</p>                        
                     </div>
 
                     <!-- ***** Single Widget ***** -->
@@ -878,215 +97,516 @@
                         
                         <!-- Section Heading -->
                         <div class="section-heading style-2 mb-30">
-                            <h4>Belum Dijawab</h4>
+                            <h4>Tanya Jawab Lama</h4>
                             <div class="line"></div>
                         </div>
 
-                        <!-- Pertanyaan belum dijawab -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-12">
-                                    <!-- Post Thumbnail -->
-                                    <a href="#">
-                                        <div class="card pl-2">
-                                            <span class="question-date">23 Januari 2019</span>
-                                            <p class="mb-2 text-black">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula...</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        <!-- Pertanyaan belum dipublis -->
+                        <div class="single-post-area mb-30" id="question-entered-old">
+                            
                         </div>
 
-                        <!-- Pertanyaan belum dijawab -->
-                        <div class="single-post-area mb-30">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-12">
-                                    <!-- Post Thumbnail -->
-                                    <a href="#">
-                                        <div class="card pl-2">
-                                            <span class="question-date">23 Januari 2019</span>
-                                            <p class="mb-2 text-black">Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula...</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <!-- ***** Single Widget ***** -->
-                    <div class="single-widget add-widget mb-50">
-                        <a href="#"><img src="img/bg-img/add.png" alt=""></a>
-                    </div>
-
-                    <!-- ***** Sidebar Widget ***** -->
-                    <div class="single-widget youtube-channel-widget mb-50">
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2 mb-30">
-                            <h4>Hot Channels</h4>
-                            <div class="line"></div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/25.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Music Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/26.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Trending Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/27.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Travel Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/28.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">Sport Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-
-                        <!-- Single YouTube Channel -->
-                        <div class="single-youtube-channel d-flex align-items-center">
-                            <div class="youtube-channel-thumbnail">
-                                <img src="img/bg-img/29.jpg" alt="">
-                            </div>
-                            <div class="youtube-channel-content">
-                                <a href="single-post.html" class="channel-title">TV Show Channel</a>
-                                <a href="#" class="btn subscribe-btn"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Subscribe</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ***** Single Widget ***** -->
-                    <div class="single-widget newsletter-widget mb-50">
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2 mb-30">
-                            <h4>Newsletter</h4>
-                            <div class="line"></div>
-                        </div>
-                        <p>Subscribe our newsletter gor get notification about new updates, information discount, etc.</p>
-                        <!-- Newsletter Form -->
-                        <div class="newsletter-form">
-                            <form action="#" method="post">
-                                <input type="email" name="nl-email" class="form-control mb-15" id="emailnl" placeholder="Enter your email">
-                                <button type="submit" class="btn vizew-btn w-100">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- ***** Single Widget ***** -->
-                    <div class="single-widget mb-50">
-                        <!-- Section Heading -->
-                        <div class="section-heading style-2 mb-30">
-                            <h4>Most Viewed Playlist</h4>
-                            <div class="line"></div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/1.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/2.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/36.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">Sweet Yummy Chocolate in the</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/37.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">DC Shoes: gymkhana five; the making of</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Blog Post -->
-                        <div class="single-blog-post d-flex">
-                            <div class="post-thumbnail">
-                                <img src="img/bg-img/38.jpg" alt="">
-                            </div>
-                            <div class="post-content">
-                                <a href="single-post.html" class="post-title">How To Make Orange Chicken Recipe?</a>
-                                <div class="post-meta d-flex justify-content-between">
-                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>
 </section>
 <!-- ##### Vizew Psot Area End ##### -->
+
+<!-- Custom inline -->
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        // menyembunyikan tombol insert image di simditor
+        $('.toolbar-item-image').hide();
+
+        $('#loading-area').hide();
+        // pagination data
+        loader(true);
+        $.when(paginationData()).done(function(a1){
+            loader(false);
+        });
+        // end pagination data
+
+        $('.loading-area2').hide();
+        // pagination data
+        loader2(true);
+        $.when(paginationData2()).done(function(a1){
+            loader2(false);
+        });
+        // end pagination data
+
+        // side right data
+        answeredOld();
+        // end side right data
+
+        let data = <?=json_encode($dataBottom['data'])?>;
+        let dataLength = data.length;
+
+        // pagination
+        let rowT =  '<li class="page-item top-page"><a class="page-link top-link" id-page="1" href="#"><i class="fa fa-angle-left"></i></a></li>'; 
+        if(data != null && dataLength > 5){
+            $('#pagination').append(rowT);
+        }
+
+        // paginationMidle();
+
+        let rowB =  '<li class="page-item bottom-page"><a class="page-link bottom-link" id-page="2" href="#"><i class="fa fa-angle-right"></i></a></li>';
+        if(data != null && dataLength > 5){
+            $('#pagination').append(rowB);
+        }
+        // end pagination
+
+        // click pagination
+        $('.active-link').off('click');
+        $('.midle-link').click(function(){
+            let data = <?=json_encode($dataBottom['data'])?>;
+            
+            let dataLength = data.length;
+            let dataMod = dataLength % 5;
+            let dataTot = parseInt(dataLength/5);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            let page = (this).getAttribute('id-page');
+
+            $('.top-page').removeClass('active');
+            $('.top-link').removeClass('active-link');
+            $('.midle-page').removeClass('active');
+            $('.midle-link').removeClass('active-link');
+            $('.bottom-page').removeClass('active');
+            $('.bottom-link').removeClass('active-link');
+            
+            $('#data-answer').empty();
+
+            if(page == 1){
+                $('.top-link').attr('hidden', 'hidden');
+            }else if(page == dataPage+1){
+                $('.bottom-link').attr('hidden', 'hidden');
+            }else{
+                $('.top-link').removeAttr('hidden');
+                $('.bottom-link').removeAttr('hidden');
+            }
+
+            $('.top-link').attr('id-page', (parseInt(page)-1));
+            $('.bottom-link').attr('id-page', (parseInt(page)+1));
+
+            $(this).addClass('active-link');
+            $(this).parent('li').addClass('active');
+            $('.midle-link').on('click');
+            
+            loader(true);
+            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+                loader(false);
+            });
+
+        });
+
+        $('.top-link').click(function(){
+            let page = (this).getAttribute('id-page');
+
+            $('.top-page').removeClass('active');
+            $('.top-link').removeClass('active-link');
+            $('.midle-page').removeClass('active');
+            $('.midle-link').removeClass('active-link');
+            $('.bottom-page').removeClass('active');
+            $('.bottom-link').removeClass('active-link');
+            
+            $('#data-answer').empty();
+
+            $('.bottom-link').removeAttr('hidden');
+            if(page == 1){
+                $('.top-link').attr('hidden', 'hidden');
+            }
+
+            $('.top-link').attr('id-page', (parseInt(page)-1));
+            $('.bottom-link').attr('id-page', (parseInt(page)+1));
+
+            $('.midle-'+page).addClass('active-link');
+            $('.midle-'+page).parent('li').addClass('active');
+            $('.midle-link').on('click');
+
+            loader(true);
+            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+                loader(false);
+            });
+
+        });
+
+        $('.bottom-link').click(function(){
+            let data = <?=json_encode($dataBottom['data'])?>;
+            
+            let dataLength = data.length;
+            let dataMod = dataLength % 5;
+            let dataTot = parseInt(dataLength/5);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            let page = (this).getAttribute('id-page');
+
+            $('.top-page').removeClass('active');
+            $('.top-link').removeClass('active-link');
+            $('.midle-page').removeClass('active');
+            $('.midle-link').removeClass('active-link');
+            $('.bottom-page').removeClass('active');
+            $('.bottom-link').removeClass('active-link');
+            
+            $('#data-answer').empty();
+
+            $('.top-link').removeAttr('hidden');
+
+            if(page == dataPage+1){
+                $('.bottom-link').attr('hidden', 'hidden');
+            }
+
+            $('.top-link').attr('id-page', (parseInt(page)-1));
+            $('.bottom-link').attr('id-page', (parseInt(page)+1));
+
+            $('.midle-'+page).addClass('active-link');
+            $('.midle-'+page).parent('li').addClass('active');
+            $('.midle-link').on('click');
+
+            loader(true);
+            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+                loader(false);
+            });
+        
+        });
+        // end click pagination
+ 
+    });
+
+    function loader(a = true){
+        $('#loading-area').show();
+        if(a == false){
+            $('#loading-area').hide();
+        }
+    }
+
+    function loader2(a = true){
+        $('.loading-area2').show();
+        if(a == false){
+            $('.loading-area2').hide();
+        }
+    }
+
+    // pagination Data
+    function paginationData(page = 0){
+
+        let data = <?=json_encode($dataBottom['data'])?>;
+
+        if(data != ''){
+
+            let dataLength = data.length;
+            let dataMod = dataLength % 5;
+            let dataTot = parseInt(dataLength/5);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            if(((page+4)/4) == (dataPage+1) || dataLength == dataMod){
+                for(let i = page; i <= ((page+dataMod)-1); i++){
+                                            
+                    row =   '<div class="single-post-area mb-30">'+
+                            '<div class="row align-items-center">'+
+                                '<div class="col-12 col-lg-6">'+
+                                    '<div class="post-thumbnail">'+
+                                        '<img src="<?=base_url()?>assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="">'+
+                                        '<span class="video-duration">'+_dateIND(data[i].tb_penjawab_tgl)+'</span>'+
+                                    '</div>'+
+                                '</div>'+
+                                '<div class="col-12 col-lg-6">'+
+                                    '<div class="post-content mt-0">'+
+                                        '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title mb-2">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                        '<div class="post-meta d-flex align-items-center mb-2">'+
+                                            '<a href="#" class="post-author">Oleh '+data[i].tb_akun_detail_nama+'</a>'+
+                                        '</div>'+
+                                        '<p class="mb-2">'+_splitText(data[i].tb_jawaban_isi, 150)+'</p>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+                    
+                    $("#data-answer").append(row);
+
+                } 
+            }else{
+                for(let i = page; i <= (page+4); i++){
+                          
+                    row =   '<div class="single-post-area mb-30">'+
+                            '<div class="row align-items-center">'+
+                                '<div class="col-12 col-lg-6">'+
+                                    '<div class="post-thumbnail">'+
+                                        '<img src="<?=base_url()?>assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="">'+
+                                        '<span class="video-duration">'+_dateIND(data[i].tb_penjawab_tgl)+'</span>'+
+                                    '</div>'+
+                                '</div>'+
+                                '<div class="col-12 col-lg-6">'+
+                                    '<div class="post-content mt-0">'+
+                                        '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title mb-2">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                        '<div class="post-meta d-flex align-items-center mb-2">'+
+                                            '<a href="#" class="post-author">Oleh '+data[i].tb_akun_detail_nama+'</a>'+
+                                        '</div>'+
+                                        '<p class="mb-2">'+_splitText(data[i].tb_jawaban_isi, 150)+'</p>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+
+                    $("#data-answer").append(row);
+                }
+            }
+        }else{
+            let row = '<div class="single-post-area mb-30">'+
+                            '<div class="row align-items-center">'+
+                                '<div class="col-12 col-lg-12">'+
+                                    '<h5 class="text-center text-default">Tidak ada tanya jawab yang terpublis.</h5>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+            $("#data-answer").append(row);
+        }
+
+    }
+    // end pagination data
+
+    // pagination Data2
+    function paginationData2(page = 0){
+        let rowTop;
+        let rowBottom;
+        
+        let data = <?=json_encode($dataTop['data'])?>;
+
+        if(data != ''){
+
+            let dataLength = data.length;
+            let dataMod = dataLength % 5;
+            let dataTot = parseInt(dataLength/5);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            let count = 1;
+            if(((page+4)/4) == (dataPage+1) || dataLength == dataMod){
+                
+                for(let i = page; i <= ((page+dataMod)-1); i++){
+
+                    rowTop =    '<div class="tab-pane fade" id="post-'+count+'" role="tabpanel" aria-labelledby="post-'+count+'-tab">'+
+                                    '<div class="single-feature-post video-post bg-img" style="background-image: url(<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+');">'+
+                                        '<div class="post-content">'+
+                                            '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                        '</div>'+
+                                        '<span class="video-duration">'+_dateIND(data[i].tb_pengedit_tgl)+'</span>'+
+                                    '</div>'+
+                                '</div>';
+                    
+                    rowBottom =     '<li class="nav-item">'+
+                                        '<a class="nav-link" id="post-'+count+'-tab" data-toggle="pill" href="#post-'+count+'" role="tab" aria-controls="post-'+count+'" aria-selected="true">'+
+                                            '<div class="single-blog-post style-2 d-flex align-items-center">'+
+                                                '<div class="post-thumbnail">'+
+                                                    '<img src="<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="gambar jawaban">'+
+                                                '</div>'+
+                                                '<div class="post-content">'+
+                                                    '<h6 class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</h6>'+
+                                                '</div>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</li>';
+
+                    if(count == 1){
+                        rowTop =    '<div class="tab-pane fade show active" id="post-'+count+'" role="tabpanel" aria-labelledby="post-'+count+'-tab">'+
+                                        '<div class="single-feature-post video-post bg-img" style="background-image: url(<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+');">'+
+                                            '<div class="post-content">'+
+                                                '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                            '</div>'+
+                                            '<span class="video-duration">'+_dateIND(data[i].tb_pengedit_tgl)+'</span>'+
+                                        '</div>'+
+                                    '</div>';
+                    
+                        rowBottom =     '<li class="nav-item">'+
+                                            '<a class="nav-link active" id="post-'+count+'-tab" data-toggle="pill" href="#post-'+count+'" role="tab" aria-controls="post-'+count+'" aria-selected="true">'+
+                                                '<div class="single-blog-post style-2 d-flex align-items-center">'+
+                                                    '<div class="post-thumbnail">'+
+                                                        '<img src="<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="">'+
+                                                    '</div>'+
+                                                    '<div class="post-content">'+
+                                                        '<h6 class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</h6>'+
+                                                    '</div>'+
+                                                '</div>'+
+                                            '</a>'+
+                                        '</li>';
+                    }
+                    
+                    $("#data-top").append(rowTop);
+                    $("#data-bottom").append(rowBottom);
+                    count++;
+                } 
+            }else{
+                for(let i = page; i <= (page+4); i++){
+                        
+                    rowTop =    '<div class="tab-pane fade" id="post-'+count+'" role="tabpanel" aria-labelledby="post-'+count+'-tab">'+
+                                    '<div class="single-feature-post video-post bg-img" style="background-image: url(<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+');">'+
+                                        '<div class="post-content">'+
+                                            '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                        '</div>'+
+                                        '<span class="video-duration">'+_dateIND(data[i].tb_pengedit_tgl)+'</span>'+
+                                    '</div>'+
+                                '</div>';
+                    
+                    rowBottom =     '<li class="nav-item">'+
+                                        '<a class="nav-link" id="post-'+count+'-tab" data-toggle="pill" href="#post-'+count+'" role="tab" aria-controls="post-'+count+'" aria-selected="true">'+
+                                            '<div class="single-blog-post style-2 d-flex align-items-center">'+
+                                                '<div class="post-thumbnail">'+
+                                                    '<img src="<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="gambar jawaban">'+
+                                                '</div>'+
+                                                '<div class="post-content">'+
+                                                    '<h6 class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</h6>'+
+                                                '</div>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</li>';
+
+                    if(count == 1){
+                        rowTop =    '<div class="tab-pane fade show active" id="post-'+count+'" role="tabpanel" aria-labelledby="post-'+count+'-tab">'+
+                                        '<div class="single-feature-post video-post bg-img" style="background-image: url(<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+');">'+
+                                            '<div class="post-content">'+
+                                                '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</a>'+
+                                            '</div>'+
+                                            '<span class="video-duration">'+_dateIND(data[i].tb_pengedit_tgl)+'</span>'+
+                                        '</div>'+
+                                    '</div>';
+                    
+                        rowBottom =     '<li class="nav-item">'+
+                                            '<a class="nav-link active" id="post-'+count+'-tab" data-toggle="pill" href="#post-'+count+'" role="tab" aria-controls="post-'+count+'" aria-selected="true">'+
+                                                '<div class="single-blog-post style-2 d-flex align-items-center">'+
+                                                    '<div class="post-thumbnail">'+
+                                                        '<img src="<?=base_url()?>/assets/img/post/'+data[i].tb_jawaban_gambar+'" alt="">'+
+                                                    '</div>'+
+                                                    '<div class="post-content">'+
+                                                        '<h6 class="post-title">'+_splitText(data[i].tb_jawaban_judul, 50)+'</h6>'+
+                                                    '</div>'+
+                                                '</div>'+
+                                            '</a>'+
+                                        '</li>';
+                    }
+                    
+                    $("#data-top").append(rowTop);
+                    $("#data-bottom").append(rowBottom);
+                    count++;
+                }
+            }
+        }else{
+            let row = '<div class="single-post-area mb-30">'+
+                            '<div class="row align-items-center">'+
+                                '<div class="col-12 col-lg-12">'+
+                                    '<h5 class="text-center text-default">Tidak ada tanya jawab yang terpublis.</h5>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>';
+            $("#data-Bottom").append(row);
+        }
+
+    }
+    // end pagination data2
+
+    // pagination midle
+    function paginationMidle(){
+        $('.midle-page').remove();
+        let data = <?=json_encode($dataBottom['data'])?>;
+
+        if(data != null){
+            let dataLength = data.length;
+            let dataMod = dataLength % 5;
+            let dataTot = parseInt(dataLength/5);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            for(let i = 0; i <= dataPage-1; i++){
+
+                let rowM =  '<li class="page-item midle-page"><a class="page-link midle-link midle-'+(i+1)+'" id-page="'+(i+1)+'" href="#">'+(i+1)+'</a></li>';
+                if(i == 0){
+                    rowM =  '<li class="page-item midle-page active"><a class="page-link active-link midle-link midle-'+(i+1)+'" id-page="'+(i+1)+'" href="#">'+(i+1)+'</a></li>';
+                }
+
+                if(dataLength > 5){
+                    $('#pagination').append(rowM);
+                }
+
+            }
+
+            $('.top-page').addClass('active');
+            $('.top-link').addClass('active-link');
+        }
+
+    }
+    // end pagination midle
+
+    function answeredOld(){
+
+        let data = <?=json_encode($dataRight['data'])?>;
+
+        if(data != null){
+            let dataLength = data.length;
+            let dataMod = dataLength % 3;
+            let dataTot = parseInt(dataLength/3);
+            let dataPage = dataTot;
+            
+            if(dataMod > 0){
+                dataPage = dataTot+1;
+            }
+
+            if(dataLength == dataMod){
+                for(let i = 0; i <= (dataMod-1); i++){
+
+                    let row =   '<div class="row align-items-center mb-2">'+
+                                    '<div class="col-12 col-lg-12">'+
+                                        '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="btn-modal-question-detail">'+
+                                            '<div class="card pl-2 bg-darkself">'+
+                                                '<span class="question-date">'+_dateIND(data[i].tb_penjawab_tgl)+'</span>'+
+                                                '<p class="mb-2 text-white">'+_splitText(data[i].tb_pertanyaan_isi, 80)+'</p>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</div>'+
+                                '</div>';
+                    $('#question-entered-old').append(row);
+
+                }
+
+            }else{
+                for(let i = 0; i <= 2; i++){
+
+                    let row =   '<div class="row align-items-center mb-2">'+
+                                    '<div class="col-12 col-lg-12">'+
+                                        '<a target="_blank" href="<?=base_url()?>multi/single-post/'+data[i].id_tb_jawaban+'" class="btn-modal-question-detail">'+
+                                            '<div class="card pl-2 bg-darkself">'+
+                                                '<span class="question-date">'+_dateIND(data[i].tb_penjawab_tgl)+'</span>'+
+                                                '<p class="mb-2 text-white">'+_splitText(data[i].tb_pertanyaan_isi, 80)+'</p>'+
+                                            '</div>'+
+                                        '</a>'+
+                                    '</div>'+
+                                '</div>';
+                    $('#question-entered-old').append(row);
+                    
+                }
+            }
+        }
+
+    }
+
+</script>

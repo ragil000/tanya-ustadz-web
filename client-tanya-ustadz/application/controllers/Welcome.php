@@ -8,8 +8,8 @@ class Welcome extends CI_Controller {
 		$result['berandaActive'] = '';
 		$result['pertanyaanSayaActive'] = '';
 
-		$this->load->view('users/templates/header', $result);
-		$this->load->view('users/pages/login');
-		$this->load->view('users/templates/footer');
+		$this->load->view('templates/header', $result);
+		$this->load->view('multi/login');
+		$this->load->view('templates/footer');
 	}
 }

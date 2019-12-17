@@ -68,6 +68,47 @@ body {
  }
 /* end loading animation */
 
+/* clock */
+
+.clock-container{
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center !important; /* Safari 7.0+ */
+  display: flex !important;
+  align-items: center !important;
+}
+
+.clock-container .clock-item{
+    -webkit-flex: 1 !important; /* Safari 6.1+ */
+    flex: 1 !important;
+    /* text-shadow: 0 0 20px rgb(248, 248, 248),  0 0 20px rgba(10, 175, 230, 0); */
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-size: 35px;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/* end clock */
+
+.text-center{
+  text-align: center;
+}
+
+.text-white-important > *{
+  background-color: white !important;
+  color: white !important;
+}
+
+.text-black{
+  color: black !important;
+}
+
+.border-red{
+  /* border-color: red; */
+  border: 2px solid red !important;
+}
+
 .text-default{
   color: #a6a6a6; }
 

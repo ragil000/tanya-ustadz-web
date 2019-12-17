@@ -13,12 +13,57 @@ class UsersModel extends CI_Model{
 
     }
 
-    public function _getMyQuestion($id_tb_akun){
+    public function _getMyQuestion($id_tb_akun = null){
         
         $response = $this->_client->request('GET', 'UsersController', [
             'query' => [
                 'id_tb_akun' => $id_tb_akun
             ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getSimilarityData($id_tb_akun = null){
+        
+        $response = $this->_client->request('GET', 'UsersController/getSimilarityData', [
+            'query' => [
+                'id_tb_akun' => $id_tb_akun
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getMyQuestionAnswered($id_tb_akun = null){
+        
+        $response = $this->_client->request('GET', 'UsersController/getMyQuestionAnswered', [
+            'query' => [
+                'id_tb_akun' => $id_tb_akun
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _similarMyQuestion($id_tb_pertanyaan, $id_tb_penjawab){
+        
+        $data = [
+            'id_tb_pertanyaan' => $id_tb_pertanyaan,
+            'id_tb_penjawab' => $id_tb_penjawab
+        ];
+
+        $response = $this->_client->request('POST', 'UsersController/similarMyQuestion', [
+            'form_params' => $data
         ]);
 
         $result = json_decode($response->getBody()->getContents(), true);
@@ -45,42 +90,13 @@ class UsersModel extends CI_Model{
 
     }
 
-    public function getAnswerById($id){
-        
-        $response = $this->_client->request('GET', 'QuestionController', [
-            'query' => [
-                'id_tb_jawaban' => $id
-            ]
-        ]);
+    public function _deleteMyQuestion($id_tb_pertanyaan = null){
 
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function deleteAnswer($id){
-        
-        $response = $this->_client->request('DELETE', 'QuestionController', [
-            'form_params' => [
-                'id_tb_jawaban' => $id
-            ]
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function putAnswer($id){
-        
         $data = [
-            'tb_jawaban_judul' => $this->input->post('tb_jawaban_judul', true),
-            'id_tb_jawaban' => $id
+            'id_tb_pertanyaan' => $id_tb_pertanyaan
         ];
-
-        $response = $this->_client->request('PUT', 'QuestionController', [
+        
+        $response = $this->_client->request('DELETE', 'UsersController', [
             'form_params' => $data
         ]);
 
@@ -89,5 +105,5 @@ class UsersModel extends CI_Model{
         return $result;
 
     }
-
+   
 }

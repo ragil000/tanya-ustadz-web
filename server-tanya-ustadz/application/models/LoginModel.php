@@ -2,7 +2,7 @@
 
 class LoginModel extends CI_Model {
 
-    public function getLogin($get = null) {
+    public function _getLogin($get = null) {
 
         $usernameCek = $this->db->get_where('tb_akun', ['tb_akun_username' => $get['tb_akun_username']])->num_rows();
         $passwordCek = $this->db->get_where('tb_akun', ['tb_akun_password' => md5($get['tb_akun_password'])])->num_rows();
@@ -15,7 +15,7 @@ class LoginModel extends CI_Model {
             
             $result['status'] = true;
             $result['message'] = 'Berhasil masuk';
-            $result['data'] = $this->db->get_where('tb_akun', ['tb_akun_password' => md5($get['tb_akun_password'])])->result_array();
+            $result['data'] = $this->db->get_where('tb_akun', ['tb_akun_username' => $get['tb_akun_username'], 'tb_akun_password' => md5($get['tb_akun_password'])])->result_array();
 
         }else if($usernameCek <= 0 && $passwordCek > 0) {
             
@@ -35,45 +35,19 @@ class LoginModel extends CI_Model {
     
     }
 
-    public function postCategory($data = null) {
+    public function _getAllAccount(){
+        return $this->db->get('tb_akun')->result_array();
+    }
+
+    public function _postLogin($data = null) {
 
        if($data === null) {
             return $this->db->affected_rows();
        }else {
-            $this->db->insert('tb_kategori', $data);
+            $this->db->insert('tb_akun', $data);
             return $this->db->affected_rows();
        }
         
-    }
-
-    public function deleteCategory($id = null) {
-
-        if($id === null) {
-
-            return $this->db->affected_rows();
-        
-        }else {
-
-            $this->db->delete('tb_kategori', ['id_tb_kategori' => $id]);
-            return $this->db->affected_rows();
-            
-        }
-
-    }
-
-    public function putCategory($data = null, $id = null) {
-
-        if($id === null || $data === null) {
-
-            return $this->db->affected_rows();
-        
-        }else {
-
-            $this->db->update('tb_kategori', $data, ['id_tb_kategori' => $id]);
-            return $this->db->affected_rows();
-            
-        }
-
     }
 
 }

@@ -15,7 +15,7 @@ class UstadzModel extends CI_Model{
 
     public function _getAllQuestionsEntered(){
         
-        $response = $this->_client->request('GET', 'QuestionsEnteredController', [
+        $response = $this->_client->request('GET', 'UstadzController', [
            
         ]);
 
@@ -27,7 +27,7 @@ class UstadzModel extends CI_Model{
 
     public function _getQuestionEnteredById($id_tb_pertanyaan){
         
-        $response = $this->_client->request('GET', 'QuestionsEnteredController', [
+        $response = $this->_client->request('GET', 'UstadzController', [
             'query' => [
                 'id_tb_pertanyaan' => $id_tb_pertanyaan
             ]
@@ -41,9 +41,23 @@ class UstadzModel extends CI_Model{
 
     public function _getAllUstadzsAnswered($id_tb_akun){
 
-        $response = $this->_client->request('GET', 'QuestionsEnteredController/getAllUstadzsAnswered', [
+        $response = $this->_client->request('GET', 'UstadzController/getAllUstadzsAnswered', [
             'query' => [
                 'id_tb_akun' => $id_tb_akun
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getUstadzsAnsweredById($id_tb_jawaban){
+
+        $response = $this->_client->request('GET', 'UstadzController/getUstadzsAnsweredById', [
+            'query' => [
+                'id_tb_jawaban' => $id_tb_jawaban,
             ]
         ]);
 
@@ -56,13 +70,14 @@ class UstadzModel extends CI_Model{
     public function _postMyAnswer($post){
         
         $data = [
+            'id_tb_akun' => $_SESSION['id_tb_akun'],
             'id_tb_pertanyaan' => $post['id_tb_pertanyaan'],
             'tb_jawaban_isi' => $post['tb_jawaban_isi'],
             'tb_jawaban_gambar' => 'default.jpg',
             'tb_jawaban_rating' => '0'
         ];
 
-        $response = $this->_client->request('POST', 'QuestionsEnteredController', [
+        $response = $this->_client->request('POST', 'UstadzController', [
             'form_params' => $data
         ]);
 
@@ -72,27 +87,14 @@ class UstadzModel extends CI_Model{
 
     }
 
-    public function deleteAnswer($id){
-        
-        $response = $this->_client->request('DELETE', 'QuestionController', [
-            'form_params' => [
-                'id_tb_jawaban' => $id
-            ]
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function postAnswer(){
+    public function _putMyAnswer(){
         
         $data = [
-            'tb_jawaban_judul' => $this->input->post('tb_jawaban_judul', true),
+            'tb_jawaban_isi' => $this->input->post('tb_jawaban_isi', true),
+            'id_tb_jawaban' => $this->input->post('id_tb_jawaban', true),
         ];
 
-        $response = $this->_client->request('POST', 'QuestionController', [
+        $response = $this->_client->request('PUT', 'UstadzController', [
             'form_params' => $data
         ]);
 
@@ -102,14 +104,14 @@ class UstadzModel extends CI_Model{
 
     }
 
-    public function putAnswer($id){
-        
-        $data = [
-            'tb_jawaban_judul' => $this->input->post('tb_jawaban_judul', true),
-            'id_tb_jawaban' => $id
-        ];
+    public function _deleteMyAnswer($id_tb_pertanyaan = null, $id_tb_jawaban = null){
 
-        $response = $this->_client->request('PUT', 'QuestionController', [
+        $data = [
+            'id_tb_pertanyaan' => $id_tb_pertanyaan,
+            'id_tb_jawaban' => $id_tb_jawaban
+        ];
+        
+        $response = $this->_client->request('DELETE', 'UstadzController', [
             'form_params' => $data
         ]);
 

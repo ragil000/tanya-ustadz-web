@@ -24,7 +24,7 @@ class LoginController extends CI_Controller {
 
         $get = $this->get();
 
-        $result = $this->LoginModel->getLogin($get);
+        $result = $this->LoginModel->_getLogin($get);
         
         if($result['status']) {
 
@@ -46,13 +46,38 @@ class LoginController extends CI_Controller {
 
     }
 
+    public function getAllAccount_get(){
+        $result = $this->LoginModel->_getAllAccount();
+        
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil'
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => $result,
+                'message' => 'Data kosong'
+            ], 201);
+
+        }
+    }
+
     public function index_post() {
 
         $data = [
-            'tb_kategori_nama' => $this->post('tb_kategori_nama'),
+            'tb_akun_username' => $this->post('tb_akun_username'),
+            'tb_akun_password' => $this->post('tb_akun_password'),
+            'tb_akun_level' => $this->post('tb_akun_level'),
+            'tb_akun_tgl' => date('Y-m-d'),
         ];
 
-        $result = $this->LoginModel->postLogin($data);
+        $result = $this->LoginModel->_postLogin($data);
         if($result > 0) {
 
             $this->response([

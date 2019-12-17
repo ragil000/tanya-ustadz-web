@@ -13,73 +13,48 @@ class BerandaModel extends CI_Model{
 
     }
 
-    public function getAnswers(){
+    public function _getBerandaTop(){
         
-        $response = $this->_client->request('GET', 'QuestionController', [
+        $response = $this->_client->request('GET', 'BerandaController/getBerandaTop', [
+        
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getBerandaBottom(){
+        
+        $response = $this->_client->request('GET', 'BerandaController/getBerandaBottom', [
+        
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getBerandaRight(){
+        
+        $response = $this->_client->request('GET', 'BerandaController/getBerandaRight', [
+        
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getSinglePost($id_tb_jawaban = null){
+        
+        $response = $this->_client->request('GET', 'BerandaController', [
             'query' => [
-
+                'id_tb_jawaban' => $id_tb_jawaban
             ]
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function getAnswerById($id){
-        
-        $response = $this->_client->request('GET', 'QuestionController', [
-            'query' => [
-                'id_tb_jawaban' => $id
-            ]
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function deleteAnswer($id){
-        
-        $response = $this->_client->request('DELETE', 'QuestionController', [
-            'form_params' => [
-                'id_tb_jawaban' => $id
-            ]
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function postAnswer(){
-        
-        $data = [
-            'tb_jawaban_judul' => $this->input->post('tb_jawaban_judul', true),
-        ];
-
-        $response = $this->_client->request('POST', 'QuestionController', [
-            'form_params' => $data
-        ]);
-
-        $result = json_decode($response->getBody()->getContents(), true);
-
-        return $result;
-
-    }
-
-    public function putAnswer($id){
-        
-        $data = [
-            'tb_jawaban_judul' => $this->input->post('tb_jawaban_judul', true),
-            'id_tb_jawaban' => $id
-        ];
-
-        $response = $this->_client->request('PUT', 'QuestionController', [
-            'form_params' => $data
         ]);
 
         $result = json_decode($response->getBody()->getContents(), true);

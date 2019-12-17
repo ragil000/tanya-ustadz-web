@@ -19,8 +19,14 @@
         <!-- SIM editor -->
         <link rel="stylesheet" type="text/css" href="<?=base_url()?>depan/node_modules/simditor/styles/simditor.css" />
 
+        <!-- sweet alert -->
+        <script src="<?=base_url()?>node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
         <!-- jQuery-2.2.4 js -->
         <script src="<?=base_url()?>depan/js/jquery/jquery-2.2.4.min.js"></script>
+
+        <!-- library RMY -->
+        <script src="<?=base_url()?>depan/js/RMYLibrary.js"></script>
 
         <!-- Sim text editor -->
         <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simple-hotkeys/node_modules/simple-module/lib/module.js"></script>
@@ -28,9 +34,30 @@
         <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simple-uploader/dist/uploader.js"></script>
         <script type="text/javascript" src="<?=base_url()?>depan/node_modules/simditor/lib/simditor.js"></script>
 
+        <script>
+            function startTime() {
+                let today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                h = checkTime(h);
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('set-clock').innerHTML = h + ":" + m + ":" + s;
+                let t = setTimeout(startTime, 500);
+            }
+
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+
     </head>
 
-    <body>
+    <body onload="startTime()">
         <!-- Preloader -->
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="lds-ellipsis">
@@ -51,13 +78,13 @@
                             <!-- Breaking News Widget -->
                             <div class="breaking-news-area d-flex align-items-center">
                                 <div class="news-title">
-                                    <p>Berita terbaru:</p>
+                                    <p>Nasehat Indah:</p>
                                 </div>
                                 <div id="breakingNewsTicker" class="ticker">
                                     <ul>
-                                        <li><a href="#">10 Things Amazon Echo Can Do</a></li>
-                                        <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                        <li><a href="#">Boys 'doing well' after Thai</a></li>
+                                        <li><a href="#">"Tak akan ada yang akan mengerjakan amalmu selain dirimu"</a></li>
+                                        <li><a href="#">"Jika bukan sekarang, kapan kamu akan bertobat"</a></li>
+                                        <li><a href="#">"Para mayat itu, berharap kesempatan yang kamu sia siakan"</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -65,20 +92,31 @@
                         <div class="col-12 col-md-6">
                             <div class="top-meta-data d-flex align-items-center justify-content-end">
                                 <!-- Top Social Info -->
-                                <div class="top-social-info">
+                                <!-- <div class="top-social-info">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                     <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                </div>
+                                </div> -->
                                 <!-- Top Search Area -->
-                                <div class="top-search-area">
+                                <!-- <div class="top-search-area">
                                     <form action="#" method="post">
                                         <input type="search" name="top-search" id="topSearch" placeholder="cari artikel...">
                                         <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                     </form>
-                                </div>
+                                </div> -->
                                 <!-- Login -->
+                                <?php
+                                    if(isset($_SESSION['id_tb_akun'])){
+                                ?>
                                 <a href="#" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i> <?=@$_SESSION['tb_akun_username']?></a>
+                                <a href="<?=base_url()?>multi/keluar" class="login-btn"><i class="fa fa-sign-out" aria-hidden="true"></i> Keluar</a>
+                                <?php
+                                    }else{
+                                ?>
+                                <a href="<?=base_url()?>multi/masuk" class="login-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Masuk</a>
+                                <?php
+                                    }
+                                ?>
                             </div>
                         </div>x`
                     </div>
@@ -120,8 +158,8 @@
                                         <?php
                                                 }else if($_SESSION['tb_akun_level'] == '1'){
                                         ?>
-                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>editor/jawaban-siap-publis">Jawaban Siap Publis</a></li>
-                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>editor/jawaban-terpublis">Jawaban Terpublis</a></li>
+                                        <li class="<?=$jawabanSiapPublisActive?>"><a href="<?=base_url()?>editor/jawaban-siap-publis">Jawaban Siap Publis</a></li>
+                                        <li class="<?=$jawabanTerpublisActive?>"><a href="<?=base_url()?>editor/jawaban-terpublis">Jawaban Terpublis</a></li>
                                         <?php
                                                 }else if($_SESSION['tb_akun_level'] == '2'){
                                         ?>
@@ -133,11 +171,13 @@
                                         <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>user/pertanyaan-saya">Pertanyaan Saya</a></li>
                                         <?php
                                                 }
-                                            }
+                                            }else{
                                         ?>
-                                        <li><a href="#">Berita</a></li>
-                                        <li><a href="#">Artikel</a></li>
-                                        <li><a href="#">Tentang Web</a></li>
+                                       <li class=""><a href="<?=base_url()?>user/pertanyaan-saya">Pertanyaan Saya</a></li>
+                                       <?php
+                                            }
+                                       ?>
+                                        <!-- <li><a href="#">Tentang Web</a></li> -->
                                     </ul>
                                 </div>
                                 <!-- Nav End -->

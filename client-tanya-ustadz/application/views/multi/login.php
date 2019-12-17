@@ -22,6 +22,7 @@
                             <input type="password" name="tb_akun_password" class="form-control text-white" id="exampleInputPassword1" placeholder="Password">
                         </div>
                         <div class="form-group">
+                            <a href="<?=base_url()?>multi/daftar">Belum punya akun?</a>
                             <!-- <div class="custom-control custom-checkbox mr-sm-2">
                                 <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
                                 <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
