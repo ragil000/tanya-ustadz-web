@@ -152,7 +152,7 @@
             $('#pagination').append(rowT);
         }
 
-        // paginationMidle();
+        paginationMidle();
 
         let rowB =  '<li class="page-item bottom-page"><a class="page-link bottom-link" id-page="2" href="#"><i class="fa fa-angle-right"></i></a></li>';
         if(data != null && dataLength > 5){
@@ -186,12 +186,17 @@
             $('#data-answer').empty();
 
             if(page == 1){
+                $('.bottom-link').removeAttr('hidden');
                 $('.top-link').attr('hidden', 'hidden');
-            }else if(page == dataPage+1){
+                console.log("atas");
+            }else if(page == dataPage){
+                $('.top-link').removeAttr('hidden');
                 $('.bottom-link').attr('hidden', 'hidden');
+                console.log("tengah");
             }else{
                 $('.top-link').removeAttr('hidden');
                 $('.bottom-link').removeAttr('hidden');
+                console.log("bawah");
             }
 
             $('.top-link').attr('id-page', (parseInt(page)-1));
@@ -202,12 +207,13 @@
             $('.midle-link').on('click');
             
             loader(true);
-            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+            $.when(paginationData(((parseInt(page)*5)-5))).done(function(a1){
                 loader(false);
             });
 
         });
 
+        $('.top-link').attr('hidden', 'hidden');
         $('.top-link').click(function(){
             let page = (this).getAttribute('id-page');
 
@@ -223,6 +229,8 @@
             $('.bottom-link').removeAttr('hidden');
             if(page == 1){
                 $('.top-link').attr('hidden', 'hidden');
+            }else{
+                $('.top-link').removeAttr('hidden');
             }
 
             $('.top-link').attr('id-page', (parseInt(page)-1));
@@ -233,7 +241,7 @@
             $('.midle-link').on('click');
 
             loader(true);
-            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+            $.when(paginationData(((parseInt(page)*5)-5))).done(function(a1){
                 loader(false);
             });
 
@@ -264,8 +272,11 @@
 
             $('.top-link').removeAttr('hidden');
 
-            if(page == dataPage+1){
+            $('.top-link').removeAttr('hidden');
+            if(page == dataPage){
                 $('.bottom-link').attr('hidden', 'hidden');
+            }else{
+                $('.bottom-link').removeAttr('hidden');
             }
 
             $('.top-link').attr('id-page', (parseInt(page)-1));
@@ -276,7 +287,7 @@
             $('.midle-link').on('click');
 
             loader(true);
-            $.when(paginationData(((parseInt(page)*4)-4))).done(function(a1){
+            $.when(paginationData(((parseInt(page)*5)-5))).done(function(a1){
                 loader(false);
             });
         
@@ -315,7 +326,7 @@
                 dataPage = dataTot+1;
             }
 
-            if(((page+4)/4) == (dataPage+1) || dataLength == dataMod){
+            if((((page+5)/5) == (dataPage) || dataLength == dataMod) && dataMod != 0){
                 for(let i = page; i <= ((page+dataMod)-1); i++){
                                             
                     row =   '<div class="single-post-area mb-30">'+
@@ -400,7 +411,7 @@
             }
 
             let count = 1;
-            if(((page+4)/4) == (dataPage+1) || dataLength == dataMod){
+            if((((page+5)/5) == (dataPage) || dataLength == dataMod) && dataMod != 0){
                 
                 for(let i = page; i <= ((page+dataMod)-1); i++){
 

@@ -19,7 +19,7 @@
     if ($.fn.simpleTicker) {
         $.simpleTicker($("#breakingNewsTicker"), {
             speed: 1000,
-            delay: 3000,
+            delay: 5000,
             easing: 'swing',
             effectType: 'roll'
         });

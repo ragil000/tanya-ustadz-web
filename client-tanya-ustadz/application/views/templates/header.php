@@ -78,7 +78,7 @@
                             <!-- Breaking News Widget -->
                             <div class="breaking-news-area d-flex align-items-center">
                                 <div class="news-title">
-                                    <p>Nasehat Indah:</p>
+                                    <p id="nasehat">Nasehat Indah:</p>
                                 </div>
                                 <div id="breakingNewsTicker" class="ticker">
                                     <ul>
@@ -97,13 +97,24 @@
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                     <a href="#"><i class="fa fa-youtube-play"></i></a>
                                 </div> -->
+
+                                <?php
+                                    if(isset($berandaActive)){
+                                        if($berandaActive == 'active'){
+                                ?>
                                 <!-- Top Search Area -->
-                                <!-- <div class="top-search-area">
-                                    <form action="#" method="post">
-                                        <input type="search" name="top-search" id="topSearch" placeholder="cari artikel...">
+                                <div class="top-search-area">
+                                    <form action="<?=base_url()?>multi/beranda/search" method="post">
+                                        <input type="search" name="query_search" id="topSearch" placeholder="cari tanya jawab">
                                         <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                                     </form>
-                                </div> -->
+                                </div>
+                                
+                                <?php
+                                        }
+                                    }
+                                ?>
+
                                 <!-- Login -->
                                 <?php
                                     if(isset($_SESSION['id_tb_akun'])){
@@ -118,7 +129,7 @@
                                     }
                                 ?>
                             </div>
-                        </div>x`
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,10 +162,11 @@
                                     <ul>
                                         <li class="<?=$berandaActive?>"><a href="<?=base_url()?>multi/beranda">Beranda</a></li>
                                         <?php
-                                            if(@$_SESSION['tb_akun_level']){
+                                            if(isset($_SESSION['tb_akun_level'])){
                                                 if($_SESSION['tb_akun_level'] == '0'){
                                         ?>
-                                        <li class="<?=$pertanyaanSayaActive?>"><a href="<?=base_url()?>user/pertanyaan-saya">Pertanyaan Saya</a></li>
+                                        <li class="<?=$dataAkunActive?>"><a href="<?=base_url()?>super/data-akun">Data Akun</a></li>
+                                        <!-- <li class="<?=$akunNonaktifActive?>"><a href="<?=base_url()?>super/akun-nonaktif">Akun Nonaktif</a></li> -->
                                         <?php
                                                 }else if($_SESSION['tb_akun_level'] == '1'){
                                         ?>

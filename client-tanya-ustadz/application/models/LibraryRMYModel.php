@@ -12,6 +12,8 @@ class LibraryRMYModel extends CI_Model {
         $this->data['jawabanSayaActive'] = '';
         $this->data['jawabanSiapPublisActive'] = '';
         $this->data['jawabanTerpublisActive'] = '';
+        $this->data['dataAkunActive'] = '';
+        $this->data['akunNonaktifActive'] = '';
 
     }
 

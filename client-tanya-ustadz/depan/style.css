@@ -104,6 +104,7 @@ body {
   color: black !important;
 }
 
+
 .border-red{
   /* border-color: red; */
   border: 2px solid red !important;
@@ -483,6 +484,7 @@ input:focus {
         margin-bottom: 0;
         font-weight: 500;
         color: #db4437;
+        width: 150px;
         text-transform: uppercase; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .top-header-area .breaking-news-area .news-title p {

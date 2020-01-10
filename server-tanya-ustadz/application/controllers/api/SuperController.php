@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require APPPATH . 'libraries/REST_Controller.php';
 require APPPATH . 'libraries/Format.php';
 
-class UstadzController extends CI_Controller {
+class SuperController extends CI_Controller {
 
     use REST_Controller {
         REST_Controller::__construct as private __resTraitConstruct;
@@ -16,67 +16,16 @@ class UstadzController extends CI_Controller {
         // Construct the parent class
         parent::__construct();
         $this->__resTraitConstruct();
-        $this->load->model('UstadzModel');
+        $this->load->model('SuperModel');
 
     }
 
     public function index_get(){
 
-        $id_tb_pertanyaan = $this->get('id_tb_pertanyaan');
-
-        $result = $this->UstadzModel->_getAllQuestionsEntered($id_tb_pertanyaan);
-
-        if($result) {
-
-            $this->response([
-                'status' => true,
-                'data' => $result,
-                'message' => 'Data tertampil'
-            ], 200);
-
-        }else {
-
-            $this->response([
-                'status' => false,
-                'data' => $result,
-                'message' => 'Data kosong'
-            ], 200);
-
-        }
-
-    }
-
-    public function getDetailEditor_get(){
-
-        $id_tb_jawaban = $this->get('id_tb_jawaban');
-
-        $result = $this->UstadzModel->_getDetailEditor($id_tb_jawaban);
-
-        if($result) {
-
-            $this->response([
-                'status' => true,
-                'data' => $result,
-                'message' => 'Data tertampil'
-            ], 200);
-
-        }else {
-
-            $this->response([
-                'status' => false,
-                'data' => $result,
-                'message' => 'Data kosong'
-            ], 200);
-
-        }
-
-    }
-
-    public function getAllUstadzsAnswered_get(){
-
         $id_tb_akun = $this->get('id_tb_akun');
+        $tb_akun_username = $this->get('tb_akun_username');
 
-        $result = $this->UstadzModel->_getAllUstadzsAnswered($id_tb_akun);
+        $result = $this->SuperModel->_getAllAccount($id_tb_akun, $tb_akun_username);
 
         if($result) {
 
@@ -98,11 +47,9 @@ class UstadzController extends CI_Controller {
 
     }
 
-    public function getUstadzsAnsweredById_get(){
+    public function getAllNonactiveAccount_get(){
 
-        $id_tb_jawaban = $this->get('id_tb_jawaban');
-
-        $result = $this->UstadzModel->_getUstadzsAnsweredById($id_tb_jawaban);
+        $result = $this->SuperModel->_getAllNonactiveAccount();
 
         if($result) {
 
@@ -126,16 +73,14 @@ class UstadzController extends CI_Controller {
 
     public function index_post() {
 
-        $tgl = date("Y-m-d");
-        $id_tb_akun = $this->post('id_tb_akun');
         $data = [
-            'id_tb_pertanyaan' => $this->post('id_tb_pertanyaan'),
-            'tb_jawaban_isi' => $this->post('tb_jawaban_isi'),
-            'tb_jawaban_gambar' => $this->post('tb_jawaban_gambar'),
-            'tb_jawaban_rating' => $this->post('tb_jawaban_rating'),
+            'tb_akun_username' => $this->post('tb_akun_username'),
+            'tb_akun_password' => $this->post('tb_akun_password'),
+            'tb_akun_level' => $this->post('tb_akun_level'),
+            'tb_akun_tgl' => date('Y-m-d'),
         ];
-        
-        $result = $this->UstadzModel->_postMyAnswer($data, $id_tb_akun);
+
+        $result = $this->SuperModel->_postAccount($data);
         if($result > 0) {
 
             $this->response([
@@ -161,7 +106,7 @@ class UstadzController extends CI_Controller {
             'tb_jawaban_isi' => $this->put('tb_jawaban_isi'),
         ];
 
-        $result = $this->UstadzModel->_putMyAnswer($data, $id_tb_jawaban);
+        $result = $this->SuperModel->_putMyAnswer($data, $id_tb_jawaban);
         if($result > 0) {
 
             $this->response([
@@ -182,16 +127,14 @@ class UstadzController extends CI_Controller {
 
     public function index_delete() {
 
-        $id_tb_pertanyaan = $this->delete('id_tb_pertanyaan');
-        $id_tb_jawaban = $this->delete('id_tb_jawaban');
+        $id_tb_akun = $this->delete('id_tb_akun');
 
-        $result = $this->UstadzModel->_deleteMyAnswer($id_tb_pertanyaan, $id_tb_jawaban);
+        $result = $this->SuperModel->_deleteAccount($id_tb_akun);
 
         if($result > 0) {
 
             $this->response([
                 'status' => true,
-                'id' => $id_tb_pertanyaan,
                 'message' => 'Data berhasil dihapus'
             ], 200);
 
@@ -200,7 +143,7 @@ class UstadzController extends CI_Controller {
             $this->response([
                 'status' => false,
                 'message' => 'Data gagal dihapus'
-            ], 400);
+            ], 200);
 
         }
 

@@ -394,7 +394,7 @@
                                     '</div>'+
                                     '<div class="col-12 col-lg-6">'+
                                         '<div class="post-content mt-0">'+
-                                        '<a href="#" class="post-cata cata-sm cata-success">Kecocokan '+(dataSuggest[i]['similarity']*100)+'%</a>'+
+                                        '<a href="#" class="post-cata cata-sm cata-success">Kecocokan '+(dataSuggest[i]['similarity']*100).toFixed(2)+'%</a>'+
                                             '<a target="_blank" href="<?=base_url()?>multi/single-post/'+dataSuggest[i].id_tb_jawaban+'/'+id_tb_pertanyaan+'" class="post-title mb-2">'+_splitText(dataSuggest[i].tb_jawaban_judul, 50)+'</a>'+
                                             '<div class="post-meta d-flex align-items-center mb-2">'+
                                                 '<a href="#" class="post-author">Oleh '+dataSuggest[i].tb_akun_detail_nama+'</a>'+

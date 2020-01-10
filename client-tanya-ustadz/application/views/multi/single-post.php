@@ -59,7 +59,7 @@
 
                             <div class="d-flex justify-content-between mb-30">
                                 <div class="post-meta d-flex align-items-center">
-                                    <a href="#" class="post-author">Dijawab oleh <?=$data['data'][0]['tb_akun_detail_nama']?></a>
+                                    <a href="#" class="btn-modal-question-detail" id_tb_akun_detail="<?=$data['data'][0]['id_tb_akun_detail']?>" class="post-author">Dijawab oleh <?=$data['data'][0]['tb_akun_detail_nama']?></a>
                                     <i class="fa fa-circle" aria-hidden="true"></i>
                                     <a href="#" class="post-date"><?=$RMY->_dateIND($data['data'][0]['tb_penjawab_tgl'])?></a>
                                 </div>
@@ -69,12 +69,55 @@
                         <div class="text-black">
                             <?=$data['data'][0]['tb_jawaban_isi']?>
                         </div>
-                        
+                    
                     </div>
+                    
                 </div>
             </div>
 
+            <!-- modal lihat Ustadz -->
+            <div class="modal fade" id="modal-question-detail" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-lightgradient">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark">Detail Ustadz</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="text-black" id="ustadz-name">Aku</h4>
+                            <p class="text-dark" id="ustadz-detail">Modal body text goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal lihat Ustadz -->
+        
         </div>
     </div>
 </section>
 <!-- ##### Post Details Area End ##### -->
+
+<script>
+    let obj = $("[xss='removed']");
+
+    obj.addClass('text-black');
+
+    // click detail question
+    $('.btn-modal-question-detail').click(function(){
+            
+            $('#modal-question-detail').modal('show');
+
+            let id_tb_akun_detail = $(this).attr('id_tb_akun_detail');
+            $.get("<?=base_url()?>multi/single-post/detail-ustadz/"+id_tb_akun_detail, function(data) {
+                let result = JSON.parse(data);
+                result.data.forEach(element => {
+                    $('#ustadz-name').text(element.tb_akun_detail_nama);
+                    $('#ustadz-detail').text(element.tb_akun_detail_deskripsi);
+                });
+            });
+            
+        });
+        // end click detail question
+</script>

@@ -128,17 +128,18 @@
         // end click detail question
 
         let data = <?=json_encode($data['data'])?>;
+        let dataLength = data.length;
 
         // pagination
         let rowT =  '<li class="page-item top-page"><a class="page-link top-link" id-page="1" href="#"><i class="fa fa-angle-left"></i></a></li>'; 
-        if(data != null && data > 5){
+        if(data != null && dataLength > 5){
             $('#pagination').append(rowT);
         }
 
         paginationMidle();
         
         let rowB =  '<li class="page-item bottom-page"><a class="page-link bottom-link" id-page="2" href="#"><i class="fa fa-angle-right"></i></a></li>';
-        if(data != null && data > 5){
+        if(data != null && dataLength > 5){
             $('#pagination').append(rowB);
         }
         // end pagination

@@ -60,6 +60,7 @@ $route['multi/cekMasuk'] = 'multi/LoginController/setLogin';
 $route['multi/keluar'] = 'multi/LoginController/setLogout';
 
 $route['multi/beranda'] = 'multi/BerandaController/index';
+$route['multi/beranda/search'] = 'multi/BerandaController/searchData';
 
 $route['user/pertanyaan-saya'] = 'users/UsersController/index';
 $route['user/post-my-question'] = 'users/UsersController/postMyQuestion';
@@ -76,6 +77,7 @@ $route['ustadz/post-my-answer'] = 'ustadz/UstadzController/postMyAnswer';
 $route['ustadz/put-my-answer'] = 'ustadz/UstadzController/putMyAnswer';
 $route['ustadz/delete-my-answer/(:num)/(:num)'] = 'ustadz/UstadzController/deleteMyAnswer/$1/$2';
 $route['ustadz/getQuestionEnteredById/(:num)'] = 'ustadz/UstadzController/getQuestionEnteredById/$1';
+$route['ustadz/jawaban-saya/editorDetail/(:num)'] = 'ustadz/UstadzController/getDetailEditor/$1';
 
 $route['editor/jawaban-siap-publis/(:num)'] = 'editors/EditorsController/index/$1';
 $route['editor/jawaban-siap-publis'] = 'editors/EditorsController/index';
@@ -85,5 +87,11 @@ $route['editor/delete-published-answer/(:num)/(:num)/(:any)'] = 'editors/Editors
 $route['editor/jawaban-terpublis/(:num)'] = 'editors/EditorsController/getPublishedAnswers/$1';
 $route['editor/jawaban-terpublis'] = 'editors/EditorsController/getPublishedAnswers';
 
+$route['super/data-akun'] = 'super/SuperController/index';
+$route['super/akun-nonaktif'] = 'super/SuperController/nonactiveAccount';
+$route['super/postAccount'] = 'super/SuperController/postAccount';
+$route['super/delete-akun/(:num)'] = 'super/SuperController/deleteAccount/$1';
+
 $route['multi/single-post/(:num)'] = 'multi/BerandaController/getSinglePost/$1';
 $route['multi/single-post/(:num)/(:num)'] = 'multi/BerandaController/getSinglePost/$1/$2';
+$route['multi/single-post/detail-ustadz/(:num)'] = 'multi/BerandaController/getDetailUstadz/$1';

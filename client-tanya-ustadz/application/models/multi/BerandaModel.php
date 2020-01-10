@@ -49,11 +49,39 @@ class BerandaModel extends CI_Model{
 
     }
 
+    public function _getBerandaSearch($post){
+        
+        $response = $this->_client->request('GET', 'BerandaController/getBerandaSearch', [
+            'query' => [
+                'query_search' => $post['query_search']
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
     public function _getSinglePost($id_tb_jawaban = null){
         
         $response = $this->_client->request('GET', 'BerandaController', [
             'query' => [
                 'id_tb_jawaban' => $id_tb_jawaban
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
+    public function _getDetailUstadz($id_tb_akun_detail){
+        
+        $response = $this->_client->request('GET', 'BerandaController/getDetailUstadz', [
+            'query' => [
+                'id_tb_akun_detail' => $id_tb_akun_detail
             ]
         ]);
 

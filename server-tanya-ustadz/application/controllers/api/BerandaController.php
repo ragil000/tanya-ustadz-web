@@ -157,4 +157,55 @@ class BerandaController extends CI_Controller {
 
     }
 
+    public function getBerandaSearch_get(){
+        $get = $this->get();
+        $result = $this->BerandaModel->_getBerandaSearch($get);
+
+
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil',
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => $result,
+                'message' => 'Data kosong',
+            ], 200);
+
+        }
+
+    }
+
+    public function getDetailUstadz_get(){
+
+        $id_tb_akun_detail = $this->get('id_tb_akun_detail');
+
+        $result = $this->BerandaModel->_getDetailUstadz($id_tb_akun_detail);
+
+        if($result) {
+
+            $this->response([
+                'status' => true,
+                'data' => $result,
+                'message' => 'Data tertampil'
+            ], 200);
+
+        }else {
+
+            $this->response([
+                'status' => false,
+                'data' => $result,
+                'message' => 'Data kosong'
+            ], 200);
+
+        }
+
+    }
+
 }

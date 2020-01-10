@@ -139,7 +139,7 @@
                         
                         <!-- Section Heading -->
                         <div class="section-heading style-2 mb-30">
-                            <h4>Belum Dijawab</h4>
+                            <h4>Belum Dipublis</h4>
                             <div class="line"></div>
                         </div>
 
@@ -259,12 +259,17 @@
             $('#data-published-answer').empty();
 
             if(page == 1){
+                $('.bottom-link').removeAttr('hidden');
                 $('.top-link').attr('hidden', 'hidden');
+                console.log("atas");
             }else if(page == dataPage){
+                $('.top-link').removeAttr('hidden');
                 $('.bottom-link').attr('hidden', 'hidden');
+                console.log("tengah");
             }else{
                 $('.top-link').removeAttr('hidden');
                 $('.bottom-link').removeAttr('hidden');
+                console.log("bawah");
             }
 
             $('.top-link').attr('id-page', (parseInt(page)-1));
@@ -294,7 +299,7 @@
             
             $('#data-published-answer').empty();
 
-            // $('.bottom-link').removeAttr('hidden');
+            $('.bottom-link').removeAttr('hidden');
             if(page == 1){
                 $('.top-link').attr('hidden', 'hidden');
             }else{
@@ -338,8 +343,7 @@
             
             $('#data-published-answer').empty();
 
-            // $('.top-link').removeAttr('hidden');
-
+            $('.top-link').removeAttr('hidden');
             if(page == dataPage){
                 $('.bottom-link').attr('hidden', 'hidden');
             }else{
@@ -408,7 +412,7 @@
                 dataPage = dataTot+1;
             }
 
-            if((((page+4)/4) == (dataPage) || dataLength == dataMod) && dataMod != 0){
+            if((((page+5)/5) == (dataPage) || dataLength == dataMod) && dataMod != 0){
                 for(let i = page; i <= ((page+dataMod)-1); i++){
                                             
                     row =   '<div class="single-post-area mb-30">'+

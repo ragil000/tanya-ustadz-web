@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2019 at 02:01 AM
+-- Generation Time: Jan 10, 2020 at 12:02 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 5.6.37
 
@@ -28613,7 +28613,7 @@ CREATE TABLE `tb_akun` (
 --
 
 INSERT INTO `tb_akun` (`id_tb_akun`, `tb_akun_username`, `tb_akun_password`, `tb_akun_level`, `tb_akun_tgl`) VALUES
-(2, 'super', 'd322538682131063ea22df0b8109a4bb', 0, '2019-09-21'),
+(2, 'super', '1b3231655cebb7a1f783eddf27d254ca', 0, '2019-09-21'),
 (16, 'editor', '5aee9dbd2a188839105073571bee1b1f', 1, '2019-10-04'),
 (17, 'abu usamah', '202cb962ac59075b964b07152d234b70', 2, '2019-10-04'),
 (18, 'user', 'ee11cbb19052e40b07aac0ca060c23ee', 3, '2019-10-04'),
@@ -28622,7 +28622,9 @@ INSERT INTO `tb_akun` (`id_tb_akun`, `tb_akun_username`, `tb_akun_password`, `tb
 (21, 'ahmad', '202cb962ac59075b964b07152d234b70', 3, '2019-11-12'),
 (22, 'abu qonitah', '202cb962ac59075b964b07152d234b70', 2, '2019-11-06'),
 (23, 'Ragil000', '202cb962ac59075b964b07152d234b70', 3, '0000-00-00'),
-(24, 'qwe', '202cb962ac59075b964b07152d234b70', 3, '2019-12-11');
+(24, 'qwe', '202cb962ac59075b964b07152d234b70', 3, '2019-12-11'),
+(25, 'user4', '202cb962ac59075b964b07152d234b70', 3, '2019-12-27'),
+(27, 'qw', 'c20ad4d76fe97759aa27a0c99bff6710', 4, '2020-01-03');
 
 -- --------------------------------------------------------
 
@@ -28645,8 +28647,8 @@ CREATE TABLE `tb_akun_detail` (
 
 INSERT INTO `tb_akun_detail` (`id_tb_akun_detail`, `id_tb_akun`, `tb_akun_detail_nama`, `tb_akun_detail_gender`, `tb_akun_detail_agama`, `tb_akun_detail_deskripsi`) VALUES
 (1, 17, 'al Ustadz abu Usamah Yusuf', 'L', 'Islam', 'Beliau merupakan pengajar dan pengurus pesantren ar Risalah Kendari.'),
-(2, 22, 'al Ustadz abu Qonitah Ashadi', 'L', 'Islam', 'Beliau merupakan pengurus dan pengajar di MArkaz Dakwah ar Risalah Kendari. Beliau Juga merupakan alumni Daarul Hadits Ma\'bar Yaman'),
-(3, 16, 'abu Haidar Jadi Karya', 'L', 'Islam', '');
+(2, 22, 'al Ustadz abu Qonitah Ashadi', 'L', 'Islam', 'Beliau merupakan pengurus dan pengajar di Markaz Dakwah ar Risalah Kendari. Beliau Juga merupakan alumni Daarul Hadits Ma\'bar Yaman'),
+(3, 16, 'abu Haidar Jadi Karya', 'L', 'Islam', 'Merupakan salah satu pengurus Markaz Dakwah ar Risalah Kendari. Beliau merupakan pemegang devisi Dakwah, yang juga mengurus grup WA, Facebook dan Telegram milik Markaz Dakwah ar Risalah Kendari.');
 
 -- --------------------------------------------------------
 
@@ -28690,30 +28692,8 @@ INSERT INTO `tb_jawaban` (`id_tb_jawaban`, `id_tb_pertanyaan`, `tb_jawaban_judul
 (44, 17, 'Makan Kurma Dengan Bilangan Ganjil, Adakah Dalilnya?', '<p><span style=\"color: rgb(0, 0, 0);\">Rosululloh pernah makan kurma dengan bilangan ganjil ketika beliau hendak berangkat ke lapangan dalam rangka melaksanakan sholat idul fitri. </span><span style=\"color: rgb(0, 0, 0);\">Adapun selain dari hal ini maka kami tidak mengetahui adanya dalil yang gamblang yang menerangkan disunnahkannya makan kurma dengan bilangan ganjil.</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">Allohu a\'lam bissowab, wa b</span><span style=\"color: rgb(0, 0, 0);\">arokallohu fik.</span><br></p>', 'default.jpg', 0),
 (45, 15, 'Was - was Syaithon Didalam Sholat', '<p><span style=\"color: rgb(0, 0, 0);\">Wa\'alaikumussalam wa rohmatullohi wa barokatuh.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Biasanya gejala seperti ini ciri gangguan jin yang jahat yang tidak senang dengan orang-orang yang melakukan ketaatan kepada Alloh ta\'ala sehingga datanglah ia mengganggu ketika seseorang melaksanakan ibadah kepada Alloh ta\'ala. </span><span style=\"color: rgb(0, 0, 0);\">Maka disyariatkan bagi orang yang terganggu di dalam sholatnya untuk berlindung kepada Alloh ta\'ala dengan mengucapkan ;</span></p><p><span style=\"color: rgb(0, 0, 0);\">\"a\'udzubillahi minasysyaitonirrojim (Aku berlindung kepada Alloh dari godaan syaiton yang terkutuk) diucapkan sebanyak 3 kali lalu kemudian meludah ke arah kiri dengan ludah yang ringan yang tidak membasahi pakaian.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Utsman bin Abil ‘Ash rodhiyallohu ‘anhu, beliau datang kepada Nabi shollallohu ‘alaihi wa sallam mengadukan gangguang yang dia alami ketika sholat, </span><span style=\"color: rgb(0, 0, 0);\">maka Rosululloh shollallohu \'alaihi wa sallam bersabda:</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">ذاك شيطان يقال له خنزب فإذا أحسسته فتعوذ بالله منه واتفل على يسارك ثلاثاً</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">“Itu adalah syaiton , namanya Khinzib, </span><span style=\"color: rgb(0, 0, 0);\">Jika kamu merasa diganggu maka mintalah perlilndungan kepada Alloh dari gangguannya dan meludahlah ke kiri tiga kali.”</span></p><p><span style=\"color: rgb(0, 0, 0);\">Kata Utsman: Aku-pun melakukannya, kemudian Alloh menghilangkan gangguan itu dariku. </span><span style=\"color: rgb(0, 0, 0);\">(HR. Muslim).</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">Allohu a\'lam bissowab, wa b</span><span style=\"color: rgb(0, 0, 0);\">arokallohu fik.</span><br></p>', 'default.jpg', 0),
 (46, 13, 'Tata Cara Mandi Wajib Sesuai Tuntunan Rosulullah', '<p><span style=\"color: rgb(0, 0, 0);\">Wa\'alaikumussalam wa rohmatullohi wa barokatuhu.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Tata cara mandi wajib telah diterangkan di dalam hadits-hadits Nabi, yaitu ;</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">عن عائشة رضي الله عنها قالت </span><span style=\"color: rgb(0, 0, 0);\">: </span><span style=\"color: rgb(0, 0, 0);\">كان رسول الله صلى الله عليه وسلم إذا اغتسل من الجنابة غسل يديه ، ثم توضأ وضوءه للصلاة ، ثم اغتسل ، ثم يخلل بيده شعره حتى إذا ظن أنه قد أروى بشرته أفاض عليه الماء ثلاث مرات ، ثم غسل سائر جسده</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">\"Dari Aisyah radhiyallahu ‘anha; dia berkata, “Bahwa jika Nabi shallallahu ‘alaihi wa sallam mandi dari janabah maka beliau mulai dengan mencuci kedua telapak tangannya, kemudian berwudhu sebagaimana wudhunya untuk shalat, kemudian memasukkan jari-jarinya kedalam air kemudian menyela dasar-dasar rambutnya, sampai beliau menyangka air sampai kedasar rambutnya kemudian menyiram kepalanya dengan kedua tangannya sebanyak tiga kali kemudian beliau menyiram seluruh tubuhnya.” </span><span style=\"color: rgb(0, 0, 0);\">(HR.Al Bukhory dan Muslim).</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">Juga hadits berikut ;</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">عن ميمونة بنت الحارث رضي الله عنها زوجة النبي صلى الله عليه وسلم أنها قالت </span><span style=\"color: rgb(0, 0, 0);\">: </span><span style=\"color: rgb(0, 0, 0);\">وضعتُ لرسول الله صلى الله عليه وسلم وَضوء الجنابة ، فأكفا بيمينه على يساره مرتين أو ثلاثا ، ثم غسل فرجه ، ثم ضرب يده بالأرض أو الحائط </span><span style=\"color: rgb(0, 0, 0);\">– </span><span style=\"color: rgb(0, 0, 0);\">مرتين أو ثلاثا </span><span style=\"color: rgb(0, 0, 0);\">– </span><span style=\"color: rgb(0, 0, 0);\">ثم تمضمض واستنشق ، ثم غسل وجهه وذراعيه ، ثم أفاض على رأسه الماء ، ثم غسل سائر جسده ، ثم تنحّى فغسل رجليه ، قالت </span><span style=\"color: rgb(0, 0, 0);\">: </span><span style=\"color: rgb(0, 0, 0);\">فأتيته بخرقة فلم يُردها ، وجعل ينفض الماء بيده</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">\"Dari Maimunah binti Al-Harits radhiyallahu‘anha; dia mengatakan, “Saya menyiapkan air bagi Rasulullah shallallahu ‘alaihi wa sallam untuk mandi junub. Kemudian beliau menuangkan (air tersebut) dengan tangan kanannya di atas tangan kirinya sebanyak dua kali – atau tiga kali, kemudian beliau cuci kemaluannya, lalu menggosokkan tangannya di tanah atau di tembok sebanyak dua kali – atau tiga kali. Selanjutnya, beliau berkumur-kumur dan ber-istinsyaq (menghirup air), kemudian beliau cuci mukanya dan dua tangannya sampai siku. Kemudian beliau siram kepalanya lalu seluruh tubuhnya. Kemudian beliau mengambil posisi/tempat, bergeser, lalu mencuci kedua kakinya. Kemudian saya memberikan kepadanya kain (semacam handuk, pen.) tetapi beliau tidak menginginkannya, lalu beliau menyeka air (di tubuhnya) dengan menggunakan kedua tangannya.” </span><span style=\"color: rgb(0, 0, 0);\">(HR. Al Bukhory dan Muslim).</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">Allohu a\'lam bissowab, wa b</span><span style=\"color: rgb(0, 0, 0);\">arokallohu fik.</span><br></p>', 'default.jpg', 0),
-(47, 20, 'Hukum Menikah Dalam Keadaan Hamil', '<p><span style=\"color: rgb(0, 0, 0);\">Kepada saudara penanya, semoga dirahmati Allah. </span><span style=\"color: rgb(0, 0, 0);\">Sebagian ulama mensyaratkan dua syarat untuk bolehnya keduanya dinikahkan, yaitu :</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">1. Keduanya bertaubat kepada Allah Ta’ala.</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">2. Si wanita beristibro\' (yakni jika dia hamil maka ditunggu hingga ia melahirkan, dan jika tidak hamil maka ditunggu hingga ia haid).</span></p><p><span style=\"color: rgb(0, 0, 0);\">Sebagian ulama lainnya hanya mensyaratkan agar keduanya bertaubat, kemudian keduanya boleh dinikahkan.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Wallahu ta\'ala a\'lam bish showab.</span><br></p>', 'default.jpg', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_kategori`
---
-
-CREATE TABLE `tb_kategori` (
-  `id_tb_kategori` int(11) NOT NULL,
-  `tb_kategori_nama` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_multi_kategori`
---
-
-CREATE TABLE `tb_multi_kategori` (
-  `id_tb_multi_kategori` int(11) NOT NULL,
-  `id_tb_artikel` int(11) NOT NULL,
-  `id_tb_kategori` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+(47, 20, 'Hukum Menikah Dalam Keadaan Hamil', '<p><span style=\"color: rgb(0, 0, 0);\">Kepada saudara penanya, semoga dirahmati Allah. </span><span style=\"color: rgb(0, 0, 0);\">Sebagian ulama mensyaratkan dua syarat untuk bolehnya keduanya dinikahkan, yaitu :</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">1. Keduanya bertaubat kepada Allah Ta’ala.</span><span style=\"color: rgb(0, 0, 0);\"><br></span><span style=\"color: rgb(0, 0, 0);\">2. Si wanita beristibro\' (yakni jika dia hamil maka ditunggu hingga ia melahirkan, dan jika tidak hamil maka ditunggu hingga ia haid).</span></p><p><span style=\"color: rgb(0, 0, 0);\">Sebagian ulama lainnya hanya mensyaratkan agar keduanya bertaubat, kemudian keduanya boleh dinikahkan.</span></p><p><span style=\"color: rgb(0, 0, 0);\">Wallahu ta\'ala a\'lam bish showab.</span><br></p>', 'default.jpg', 0),
+(49, 51, '', '<p>Kepada saudara penanya yang semoga dirahmati Allah. Makan sambil berdiri adalah sunnah dari sunnah - sunnah yang telah dicontohkan oleh Nabi. Adapun terkait boleh tidaknya, seorang tidak berdosa ketika makan sambil berdiri, hanya dia telah kehilangan pahala mengamalkan sunnah.</p><p>Allahua\'lam</p>', 'default.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -28753,8 +28733,7 @@ INSERT INTO `tb_pengedit` (`id_tb_pengedit`, `id_tb_akun`, `id_tb_jawaban`, `tb_
 (25, 16, 30, '2019-12-17'),
 (26, 16, 28, '2019-12-17'),
 (27, 16, 27, '2019-12-17'),
-(28, 16, 26, '2019-12-17'),
-(30, 16, 24, '2019-12-17');
+(28, 16, 26, '2019-12-17');
 
 -- --------------------------------------------------------
 
@@ -28796,7 +28775,8 @@ INSERT INTO `tb_penjawab` (`id_tb_penjawab`, `id_tb_akun`, `id_tb_jawaban`, `tb_
 (36, 22, 44, '2019-12-16'),
 (37, 22, 45, '2019-12-16'),
 (38, 22, 46, '2019-12-16'),
-(39, 17, 47, '2019-12-16');
+(39, 17, 47, '2019-12-16'),
+(41, 17, 49, '2019-12-18');
 
 -- --------------------------------------------------------
 
@@ -28840,7 +28820,10 @@ INSERT INTO `tb_pertanyaan` (`id_tb_pertanyaan`, `id_tb_akun`, `tb_pertanyaan_is
 (35, 21, 'Assalamualaikum ustadz mohon pencerahan nya. Ana dulu pernah meninggalkan salat magrib dengan sengaja dikarenakan ana ada pertengkaran kecil dengan istri, sehingga muncul rasa malas untuk salat magrib. Sekarang ana sangat menyesal walaupun itu sudah 5 tahun yang lalu. Bagaimana cara mengganti salat magrib yang ana tinggalkan 5 tahun yang lalu. Karena penyesalan selalu muncul. Syukron ustadz sebelumnya', 3, '2019-11-07'),
 (36, 18, 'Assalamu\'alaikum, ustadz ana ingin bertanya, Apakah kita membaca dua kali bismillah apabila di hadapan kita ada makanan satu piring dan satu gelas air, yg pertama kan kita makan nasi membaca bismillah, dan selesai makan nasi kita minum apakah kita juga membaca bismillah ketika kita hendak minum. Tolong penjelasannya ustadz. Baarokallahu fiikum', 3, '2019-11-06'),
 (37, 20, 'Assalamualaikum. Mau tanya apa keutamaan surat yasin sehingga sering dibaca ketika orang meninggal', 3, '2019-11-07'),
-(47, 24, 'Bolehkah melakukan salat tahajud saat bulan ramadan ?', 4, '2019-12-17');
+(47, 24, 'Bolehkah melakukan salat tahajud saat bulan ramadan ?', 4, '2019-12-17'),
+(51, 23, 'Bolehkah makan sambil berdiri?', 2, '2019-12-18'),
+(57, 18, 'apa hukum salat malam pada bulan ramadhan?', 2, '2019-12-27'),
+(59, 25, 'apa hukum salat malam di bulan ramadhan?', 1, '2019-12-27');
 
 -- --------------------------------------------------------
 
@@ -28932,20 +28915,6 @@ ALTER TABLE `tb_jawaban`
   ADD KEY `id_tb_pertanyaan` (`id_tb_pertanyaan`);
 
 --
--- Indexes for table `tb_kategori`
---
-ALTER TABLE `tb_kategori`
-  ADD PRIMARY KEY (`id_tb_kategori`);
-
---
--- Indexes for table `tb_multi_kategori`
---
-ALTER TABLE `tb_multi_kategori`
-  ADD PRIMARY KEY (`id_tb_multi_kategori`),
-  ADD KEY `id_tb_artikel` (`id_tb_artikel`,`id_tb_kategori`),
-  ADD KEY `id_tb_kategori` (`id_tb_kategori`);
-
---
 -- Indexes for table `tb_pengedit`
 --
 ALTER TABLE `tb_pengedit`
@@ -28972,7 +28941,9 @@ ALTER TABLE `tb_pertanyaan`
 -- Indexes for table `tb_similarity`
 --
 ALTER TABLE `tb_similarity`
-  ADD PRIMARY KEY (`id_tb_similarity`);
+  ADD PRIMARY KEY (`id_tb_similarity`),
+  ADD KEY `id_tb_pertanyaan` (`id_tb_pertanyaan`,`id_tb_penjawab`),
+  ADD KEY `id_tb_penjawab` (`id_tb_penjawab`);
 
 --
 -- Indexes for table `tb_textpreprocessing`
@@ -28995,7 +28966,7 @@ ALTER TABLE `dictionary`
 -- AUTO_INCREMENT for table `tb_akun`
 --
 ALTER TABLE `tb_akun`
-  MODIFY `id_tb_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_tb_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `tb_akun_detail`
@@ -29007,37 +28978,25 @@ ALTER TABLE `tb_akun_detail`
 -- AUTO_INCREMENT for table `tb_jawaban`
 --
 ALTER TABLE `tb_jawaban`
-  MODIFY `id_tb_jawaban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
-
---
--- AUTO_INCREMENT for table `tb_kategori`
---
-ALTER TABLE `tb_kategori`
-  MODIFY `id_tb_kategori` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tb_multi_kategori`
---
-ALTER TABLE `tb_multi_kategori`
-  MODIFY `id_tb_multi_kategori` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tb_jawaban` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `tb_pengedit`
 --
 ALTER TABLE `tb_pengedit`
-  MODIFY `id_tb_pengedit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id_tb_pengedit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tb_penjawab`
 --
 ALTER TABLE `tb_penjawab`
-  MODIFY `id_tb_penjawab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_tb_penjawab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `tb_pertanyaan`
 --
 ALTER TABLE `tb_pertanyaan`
-  MODIFY `id_tb_pertanyaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id_tb_pertanyaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `tb_similarity`
@@ -29068,13 +29027,6 @@ ALTER TABLE `tb_jawaban`
   ADD CONSTRAINT `tb_jawaban_ibfk_1` FOREIGN KEY (`id_tb_pertanyaan`) REFERENCES `tb_pertanyaan` (`id_tb_pertanyaan`);
 
 --
--- Constraints for table `tb_multi_kategori`
---
-ALTER TABLE `tb_multi_kategori`
-  ADD CONSTRAINT `tb_multi_kategori_ibfk_1` FOREIGN KEY (`id_tb_artikel`) REFERENCES `tb_jawaban` (`id_tb_jawaban`),
-  ADD CONSTRAINT `tb_multi_kategori_ibfk_2` FOREIGN KEY (`id_tb_kategori`) REFERENCES `tb_kategori` (`id_tb_kategori`);
-
---
 -- Constraints for table `tb_pengedit`
 --
 ALTER TABLE `tb_pengedit`
@@ -29093,6 +29045,13 @@ ALTER TABLE `tb_penjawab`
 --
 ALTER TABLE `tb_pertanyaan`
   ADD CONSTRAINT `tb_pertanyaan_ibfk_1` FOREIGN KEY (`id_tb_akun`) REFERENCES `tb_akun` (`id_tb_akun`);
+
+--
+-- Constraints for table `tb_similarity`
+--
+ALTER TABLE `tb_similarity`
+  ADD CONSTRAINT `tb_similarity_ibfk_1` FOREIGN KEY (`id_tb_pertanyaan`) REFERENCES `tb_pertanyaan` (`id_tb_pertanyaan`),
+  ADD CONSTRAINT `tb_similarity_ibfk_2` FOREIGN KEY (`id_tb_penjawab`) REFERENCES `tb_penjawab` (`id_tb_penjawab`);
 
 --
 -- Constraints for table `tb_textpreprocessing`

@@ -39,6 +39,20 @@ class UstadzModel extends CI_Model{
 
     }
 
+    public function _getDetailEditor($id_tb_jawaban){
+        
+        $response = $this->_client->request('GET', 'UstadzController/getDetailEditor', [
+            'query' => [
+                'id_tb_jawaban' => $id_tb_jawaban
+            ]
+        ]);
+
+        $result = json_decode($response->getBody()->getContents(), true);
+
+        return $result;
+
+    }
+
     public function _getAllUstadzsAnswered($id_tb_akun){
 
         $response = $this->_client->request('GET', 'UstadzController/getAllUstadzsAnswered', [

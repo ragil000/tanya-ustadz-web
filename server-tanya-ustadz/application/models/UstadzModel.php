@@ -38,6 +38,16 @@ class UstadzModel extends CI_Model {
             $this->db->order_by("tb_penjawab.id_tb_penjawab", "DESC");
             $this->db->order_by("tb_penjawab.tb_penjawab_tgl", "DESC");
             return $this->db->get_where('tb_penjawab', ['tb_penjawab.id_tb_akun' => $id_tb_akun])->result_array();
+
+            // $this->db->join('tb_akun', 'tb_akun.id_tb_akun = tb_pengedit.id_tb_akun');
+            // $this->db->join('tb_akun_detail', 'tb_akun.id_tb_akun = tb_akun_detail.id_tb_akun');
+            // $this->db->join('tb_jawaban', 'tb_jawaban.id_tb_jawaban = tb_pengedit.id_tb_jawaban');
+            // $this->db->join('tb_pertanyaan', 'tb_pertanyaan.id_tb_pertanyaan = tb_jawaban.id_tb_pertanyaan');
+            // $this->db->join('tb_penjawab', 'tb_penjawab.id_tb_jawaban = tb_jawaban.id_tb_jawaban');
+            // $this->db->order_by("tb_pertanyaan.tb_pertanyaan_level", "ASC");
+            // $this->db->order_by("tb_penjawab.id_tb_penjawab", "DESC");
+            // $this->db->order_by("tb_penjawab.tb_penjawab_tgl", "DESC");
+            // return $this->db->get_where('tb_pengedit', ['tb_penjawab.id_tb_akun' => $id_tb_akun])->result_array();
         
         }
         
@@ -51,6 +61,16 @@ class UstadzModel extends CI_Model {
         $this->db->join('tb_jawaban', 'tb_jawaban.id_tb_jawaban = tb_penjawab.id_tb_jawaban');
         $this->db->join('tb_pertanyaan', 'tb_pertanyaan.id_tb_pertanyaan = tb_jawaban.id_tb_pertanyaan');
         return $this->db->get_where('tb_penjawab', ['tb_pertanyaan.tb_pertanyaan_level' => '2', 'tb_penjawab.id_tb_jawaban' => $id_tb_jawaban])->result_array();        
+
+    }
+
+    public function _getDetailEditor($id_tb_jawaban = null){
+
+        $this->db->join('tb_akun', 'tb_akun.id_tb_akun = tb_pengedit.id_tb_akun');
+        $this->db->join('tb_akun_detail', 'tb_akun.id_tb_akun = tb_akun_detail.id_tb_akun');
+        $this->db->join('tb_jawaban', 'tb_jawaban.id_tb_jawaban = tb_pengedit.id_tb_jawaban');
+        $this->db->join('tb_pertanyaan', 'tb_pertanyaan.id_tb_pertanyaan = tb_jawaban.id_tb_pertanyaan');
+        return $this->db->get_where('tb_pengedit', ['tb_pengedit.id_tb_jawaban' => $id_tb_jawaban])->result_array();        
 
     }
 

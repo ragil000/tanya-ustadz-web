@@ -21,6 +21,16 @@ class BerandaController extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function searchData() {
+		$post = $this->input->post();
+		$this->LibraryRMYModel->data['dataSearch'] = $this->BerandaModel->_getBerandaSearch($post);
+		$this->LibraryRMYModel->data['berandaActive'] = 'active';		
+
+		$this->load->view('templates/header', $this->LibraryRMYModel->data);
+		$this->load->view('multi/search-page');
+		$this->load->view('templates/footer');
+	}
+
 	public function getSinglePost($id_tb_jawaban = null, $id_tb_pertanya = null) {
 
 		$this->LibraryRMYModel->data['data'] = $this->BerandaModel->_getSinglePost($id_tb_jawaban);
@@ -32,5 +42,11 @@ class BerandaController extends CI_Controller {
 		$this->load->view('templates/header', $this->LibraryRMYModel->data);
 		$this->load->view('multi/single-post');
 		$this->load->view('templates/footer');
+	}
+
+	public function getDetailUstadz($id_tb_akun_detail){
+
+		echo json_encode($this->BerandaModel->_getDetailUstadz($id_tb_akun_detail));
+
 	}
 }

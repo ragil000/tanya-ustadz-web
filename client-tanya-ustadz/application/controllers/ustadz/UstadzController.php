@@ -32,6 +32,12 @@ class UstadzController extends CI_Controller {
 
 	}
 
+	public function getDetailEditor($id_tb_jawaban){
+
+		echo json_encode($this->UstadzModel->_getDetailEditor($id_tb_jawaban));
+
+	}
+
 	public function myAnswer($id_tb_pertanyaan = null, $id_tb_jawaban = null){
 
 		$this->LibraryRMYModel->data['dataAll'] = $this->UstadzModel->_getAllUstadzsAnswered($_SESSION['id_tb_akun']);
